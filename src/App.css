@@ -324,8 +324,12 @@ section {
 --------------------------------------------------------------*/
 #projects {
   background-color: #000000;
+  color: black;
 }
 
+#project p {
+  color: #000000;
+}
 #projects .row {
   background-color: #000000;
 }
@@ -334,7 +338,7 @@ section {
 }
 
 #projects .card-body {
-  background-color: #ffffff;
+  background-color: whitesmoke;
 }
 
 #projects .card-border {
@@ -342,18 +346,14 @@ section {
 }
 
 #projects .githublink {
-  color: #ffffff;
+  color: #000000;
   font-size: 30px;
-}
-
-#projects p {
-  color: #ffffff;
 }
 
 #projects .projectsHeader {
   text-align: center;
   color: white;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
 
 /*--------------------------------------------------------------
@@ -363,6 +363,10 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#contact h2 {
+  font-weight: 900;
 }
 
 .imageDiv {
@@ -379,8 +383,16 @@ section {
 }
 
 .form-control {
-  margin-bottom: 20px;
-  width: 800px;
+  display: flex;
+  margin-bottom: 15px;
+  height: 50px;
+  width: 600px;
+  border-radius: 5px;
+  border-width: 1px;
+  padding: 20px;
+}
+
+.form-input::placeholder {
 }
 
 .message {
@@ -388,7 +400,8 @@ section {
 }
 
 .message::placeholder {
-  text-align: left;
+  vertical-align: top;
+  text-align: top;
 }
 
 /*--------------------------------------------------------------
@@ -399,30 +412,27 @@ section {
   color: rgb(186, 186, 186);
   font-size: 14px;
   text-align: center;
-  padding: 30px 0px;
+  padding: 20px 0px;
 }
 #footer h3 {
-  font-size: 36px;
+  font-size: 20px;
   font-weight: 500;
   position: relative;
+  text-align: center;
   font-family: "Poppins", sans-serif;
   padding: 0;
-  margin: 0 0 15px 0;
 }
-
-#footer p {
-  font-size: 15;
-  font-style: italic;
+#footer h3 {
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
   padding: 0;
-  margin: 0 0 40px 0;
-}
-
-#footer .social-links {
-  margin: 0 0 40px 0;
 }
 
 #footer .social-links a {
-  font-size: 18px;
+  font-size: 16px;
   display: inline-block;
   background: #000000;
   color: rgb(186, 186, 186);
@@ -431,9 +441,15 @@ section {
   margin-right: 4px;
   border-radius: 50%;
   text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  transition: 0.2s;
+}
+
+#footer p {
+  margin-top: 12px;
+  margin-bottom: 0px;
 }
 
 #footer .social-links a:hover {
