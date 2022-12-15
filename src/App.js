@@ -1,17 +1,49 @@
 import "./App.css";
+import { useState, useEffect } from "react";
 import { TypeAnimation } from "react-type-animation";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-const NAME = "Chirag Agarwal";
-const INSTAGRAM = "https://www.instagram.com/chitrachirag_/";
-const TWITTER = "https://twitter.com/mcverickk";
-const LINKEDIN = "https://www.linkedin.com/in/chiragagarwal2001/";
-const GITHUB = "https://github.com/Mcverickk";
-const MEDIUM = "https://medium.com/@Mcverick";
+import {
+  NAME,
+  INSTAGRAM,
+  TWITTER,
+  LINKEDIN,
+  GITHUB,
+  MEDIUM,
+  PROJECT1,
+  PROJECT2,
+  PROJECT3,
+  PROJECT4,
+  PROJECT5,
+  PROJECT6,
+  PROJECT7,
+  PROJECT8,
+} from "./constants";
+import Col from "react-bootstrap/Col";
+import Nav from "react-bootstrap/Nav";
+import Row from "react-bootstrap/Row";
+import Tab from "react-bootstrap/Tab";
 
 function App() {
   AOS.init();
+  const githubIcon = <i class="bi socialicon1 bi-github"></i>;
+  const mediumIcon = <i class="bi socialicon1 bi-medium"></i>;
+  const websiteIcon = <i class="bi socialicon1 bi-globe"></i>;
+
+  const [tabActive, setTabActive] = useState("tab1");
+
+  const handleTabClick = (value) => {
+    if (value === tabActive) {
+      return;
+    }
+
+    setTabActive(value);
+  };
+
+  // useEffect(() => {
+  //   GetWorkDetails();
+  // }, [tabActive]);
+
   const NavHeader = () => {
     return (
       <>
@@ -287,90 +319,156 @@ function App() {
     return (
       <>
         <h2 class="projectsHeader">PROJECTS</h2>
-        <div class="album py-5">
-          <div class="container">
-            <div class="row">
-              <SingleProject
-                text="Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-            fugiat sit in iste officiis commodi quidem hic quas."
-                githublink={GITHUB}
-                image="./preview.png"
-                time=""
-              />
-              <SingleProject
-                text="Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-            fugiat sit in iste officiis commodi quidem hic quas."
-                githublink={GITHUB}
-                image="./preview.png"
-                time=""
-              />
-              <SingleProject
-                text="Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-            fugiat sit in iste officiis commodi quidem hic quas."
-                githublink={GITHUB}
-                image="./preview.png"
-                time=""
-              />
-              <SingleProject
-                text="Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-            fugiat sit in iste officiis commodi quidem hic quas."
-                githublink={GITHUB}
-                image="./preview.png"
-                time=""
-              />
-              <SingleProject
-                text="Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-            fugiat sit in iste officiis commodi quidem hic quas."
-                githublink={GITHUB}
-                image="./preview.png"
-                time=""
-              />
-              <SingleProject
-                text="Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-            fugiat sit in iste officiis commodi quidem hic quas."
-                githublink={GITHUB}
-                image="./preview.png"
-                time=""
-              />
-            </div>
-          </div>
+        <div class="projectCollection">
+          <WebDevCard
+            projectType={PROJECT7.TYPE}
+            projectTitle={PROJECT7.TITLE}
+            projectDetails={PROJECT7.DETAILS}
+            projectLink={PROJECT7.LINK}
+            projectIcon={websiteIcon}
+            tags={PROJECT7.TAGS}
+          />
+          <BlockchainCard
+            projectType={PROJECT1.TYPE}
+            projectTitle={PROJECT1.TITLE}
+            projectDetails={PROJECT1.DETAILS}
+            projectLink={PROJECT1.LINK}
+            tags={PROJECT1.TAGS}
+          />
+          <BlockchainCard
+            projectType={PROJECT2.TYPE}
+            projectTitle={PROJECT2.TITLE}
+            projectDetails={PROJECT2.DETAILS}
+            projectLink={PROJECT2.LINK}
+            projectIcon={websiteIcon}
+            tags={PROJECT2.TAGS}
+          />
+          <ArticleCard
+            projectType={PROJECT3.TYPE}
+            projectTitle={PROJECT3.TITLE}
+            projectDetails={PROJECT3.DETAILS}
+            projectLink={PROJECT3.LINK}
+            projectIcon={mediumIcon}
+            tags={PROJECT3.TAGS}
+          />
+          <BlockchainCard
+            projectType={PROJECT4.TYPE}
+            projectTitle={PROJECT4.TITLE}
+            projectDetails={PROJECT4.DETAILS}
+            projectLink={PROJECT4.LINK}
+            projectIcon={githubIcon}
+            tags={PROJECT4.TAGS}
+          />
+          <ArticleCard
+            projectType={PROJECT5.TYPE}
+            projectTitle={PROJECT5.TITLE}
+            projectDetails={PROJECT5.DETAILS}
+            projectLink={PROJECT5.LINK}
+            projectIcon={mediumIcon}
+            tags={PROJECT5.TAGS}
+          />
+          <ArticleCard
+            projectType={PROJECT6.TYPE}
+            projectTitle={PROJECT6.TITLE}
+            projectDetails={PROJECT6.DETAILS}
+            projectLink={PROJECT6.LINK}
+            projectIcon={mediumIcon}
+            tags={PROJECT6.TAGS}
+          />
         </div>
       </>
     );
   };
 
-  const SingleProject = (props) => {
-    return (
-      <div class="col-md-4">
-        <div class="card card-border mb-4 box-shadow">
-          <img class="card-img-top" src={props.image} alt="Card image cap" />
-          <div class="card-body">
-            <p class="card-text">{props.text}</p>
+  const BubbleGenerator = (props) => {
+    const bubbleList = props.bubbles.map((t) => (
+      <li class="bubbleListItem">
+        <button class="bubble">{t}</button>
+      </li>
+    ));
 
-            <div class="d-flex justify-content-between align-items-center">
-              <div>
-                <a href={props.github} class="github">
-                  <i class="bi githublink bi-github"></i>
-                </a>
-              </div>
-              <small class="text-muted">{props.time}</small>
-            </div>
-          </div>
+    return <ul class="bubbleList">{bubbleList}</ul>;
+  };
+
+  const ArticleCard = (props) => {
+    return (
+      <div class="articleCard">
+        <h5 class="projectArticle">{props.projectType}</h5>
+        <div class="projectHeader">
+          <h3 class="projectTitle">{props.projectTitle}</h3>
+          <a href={props.projectLink}>{props.projectIcon}</a>
         </div>
+        <p class="projectDetails">{props.projectDetails}</p>
+
+        <BubbleGenerator bubbles={props.tags} />
       </div>
     );
+  };
+  const BlockchainCard = (props) => {
+    return (
+      <div class="blockchainCard">
+        <h5 class="projectBlockchain">{props.projectType}</h5>
+        <div class="projectHeader">
+          <h3 class="projectTitle">{props.projectTitle}</h3>
+          <a href={props.projectLink}>{props.projectIcon}</a>
+        </div>
+        <p class="projectDetails">{props.projectDetails}</p>
+        <BubbleGenerator bubbles={props.tags} />
+      </div>
+    );
+  };
+  const WebDevCard = (props) => {
+    return (
+      <div class="webDevCard">
+        <h5 class="projectWebDev">{props.projectType}</h5>
+        <div class="projectHeader">
+          <h3 class="projectTitle">{props.projectTitle}</h3>
+          <a href={props.projectLink}>{props.projectIcon}</a>
+        </div>
+        <p class="projectDetails">{props.projectDetails}</p>
+        <BubbleGenerator bubbles={props.tags} />
+      </div>
+    );
+  };
+
+  const GetWorkDetails = (props) => {
+    let result;
+    if (props.info === "tab1") {
+      result = (
+        <div class="workDetailBox">
+          <h3 class="comapanyNameHeader">Blockchain Developer at Pay3</h3>
+          <p class="workPeriod">January - June 2017</p>
+          <ul class="workDetailList">
+            <li class="workDetailItem">
+              <p class="workDetails">My name is Chirag Agarwal</p>
+            </li>
+            <li class="workDetailItem">
+              <p class="workDetails">I am a Blockchain Developer</p>
+            </li>
+          </ul>
+        </div>
+      );
+    } else if (props.info === "tab2") {
+      result = (
+        <div class="workDetailBox">
+          <h3 class="comapanyNameHeader">Blockchain Developer at Yushu</h3>
+          <p class="workPeriod">January - June 2018</p>
+          <ul class="workDetailList">
+            <li class="workDetailItem">
+              <p class="workDetails">My name is Chirag Agarwal.....</p>
+            </li>
+            <li class="workDetailItem">
+              <p class="workDetails">I am a Blockchain Developer.....</p>
+            </li>
+          </ul>
+        </div>
+      );
+    }
+    return result;
+  };
+
+  const Experience = () => {
+    return <></>;
   };
 
   const Contact = (props) => {
@@ -395,26 +493,26 @@ function App() {
                 <div class="inputField">
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control-1"
                     id="inputName"
                     placeholder="Your Name"
                   />
                   <input
                     type="email"
-                    class="form-control"
+                    class="form-control-1"
                     id="exampleInputEmail"
                     aria-describedby="emailHelp"
                     placeholder="Email address"
                   />
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control-1"
                     id="subject"
                     placeholder="Subject"
                   />
                   <input
                     type="text"
-                    class="form-control message"
+                    class="form-control-1 message"
                     id="message"
                     placeholder="Write your message"
                   />
@@ -432,26 +530,26 @@ function App() {
 
   const Footer = (props) => {
     return (
-      <footer id="footer">
+      <footer id="Footer">
         <h3>{props.name}</h3>
         <div class="social-links">
+          <a href={props.twitter} class="twitter">
+            <i class="bi bi-twitter"></i>
+          </a>
           <a href={props.linkedin} class="linkedin">
             <i class="bi bi-linkedin"></i>
           </a>
           <a href={props.github} class="github">
             <i class="bi bi-github"></i>
           </a>
-          <a href={props.twitter} class="twitter">
-            <i class="bi bi-twitter"></i>
+          <a href={props.medium} class="medium">
+            <i class="bi bi-medium"></i>
           </a>
           <a href={props.instagram} class="instagram">
             <i class="bi bi-instagram"></i>
           </a>
-          <a href={props.medium} class="medium">
-            <i class="bi bi-medium"></i>
-          </a>
         </div>
-        <p>Made with passion & ❤️</p>
+        <p>Made with passion & 🎧</p>
       </footer>
     );
   };
@@ -480,7 +578,9 @@ function App() {
         <SkillSection />
       </section>
 
-      <section id="experience" class="experience"></section>
+      <section id="experience" class="experience">
+        <Experience />
+      </section>
 
       <section id="projects" class="projects">
         <Projects />
