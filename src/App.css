@@ -71,7 +71,7 @@ h6 {
 .nav-menu a:focus {
   display: flex;
   align-items: center;
-  color: #008793;
+  color: rgb(185, 185, 185);
 
   padding: 10px 18px;
   margin-bottom: 8px;
@@ -186,6 +186,10 @@ h6 {
     padding-left: 160px;
   }
 } */
+
+.heroo {
+  margin-top: 200px;
+}
 
 #hero {
   /* background: rgba(255, 255, 255, 0.8); */
@@ -318,6 +322,68 @@ section {
 /*--------------------------------------------------------------
 # Experience
 --------------------------------------------------------------*/
+#experience {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+.experienceHeader {
+  text-align: center;
+  margin-bottom: 100px;
+  color: rgb(255, 255, 255);
+}
+
+.experienceBox {
+}
+
+.experienceRow {
+  justify-content: center;
+}
+
+.companyColumn {
+}
+
+.companies {
+  color: #ffffff;
+  text-align: center;
+}
+
+.company {
+  border-right: #535353 solid;
+  background-color: #282828;
+  border-width: 5px;
+  height: 40px;
+  padding: 10px;
+}
+
+.company:current {
+  border-right: #ad0000 solid;
+  background-color: #282828;
+  border-width: 5px;
+  height: 40px;
+  padding: 10px;
+}
+
+.workDetailBox {
+}
+
+.comapanyNameHeader {
+  padding: 0px 60px;
+  text-align: left;
+}
+
+.workPeriod {
+  padding: 0px 60px;
+}
+
+.workDetailList {
+  padding: 20px 120px;
+}
+
+.workDetailItem {
+}
+
+.workDetails {
+}
 
 /*--------------------------------------------------------------
 # Projects
@@ -327,33 +393,130 @@ section {
   color: black;
 }
 
-#project p {
-  color: #000000;
-}
-#projects .row {
-  background-color: #000000;
-}
-#projects .container {
-  background-color: #000000;
-}
-
-#projects .card-body {
-  background-color: whitesmoke;
-}
-
-#projects .card-border {
-  background-color: #000000;
-}
-
-#projects .githublink {
-  color: #000000;
-  font-size: 30px;
-}
-
 #projects .projectsHeader {
   text-align: center;
   color: white;
   margin-bottom: 40px;
+}
+
+.projectCollection {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.articleCard {
+  background-color: rgb(255, 255, 255);
+  width: 320px;
+  height: 330px;
+  border-top: solid;
+  border-radius: 15px;
+  border-color: #58771a;
+  border-width: 10px;
+  margin: 30px;
+}
+.projectArticle {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+
+  color: #58771a;
+  font-size: 12px;
+}
+
+.blockchainCard {
+  background-color: rgb(255, 255, 255);
+  width: 320px;
+  height: 330px;
+  border-top: solid;
+  border-radius: 15px;
+  border-color: #006c8a;
+  border-width: 10px;
+  margin: 30px;
+}
+
+.projectBlockchain {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+
+  color: #006c8a;
+  font-size: 12px;
+}
+
+.webDevCard {
+  background-color: rgb(255, 255, 255);
+  width: 320px;
+  height: 330px;
+  border-top: solid;
+  border-radius: 15px;
+  border-color: #b94807;
+  border-width: 10px;
+  margin: 30px;
+}
+.projectWebDev {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+
+  color: #81007c;
+  font-size: 12px;
+}
+
+.projectHeader {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  text-align: left;
+  display: flex;
+  justify-content: left;
+  align-items: top;
+}
+
+.projectTitle {
+}
+
+.socialicon1 {
+  font-size: 22px;
+  padding: 10px;
+  color: #000000;
+}
+
+.socialicon2 {
+  align-items: center;
+  font-size: 22px;
+}
+
+.projectDetails {
+  text-align: left;
+  padding: 0px 30px;
+  font-size: 13px;
+}
+
+.bubbleList {
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.bubbleListItem {
+}
+
+.bubble {
+  border: solid;
+  border-color: #000000;
+  border-width: 0px;
+  border-radius: 10px;
+  background-color: #d6d6d66d;
+  font-size: 13px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.bubbletext {
+  color: #000000;
 }
 
 /*--------------------------------------------------------------
@@ -382,7 +545,7 @@ section {
   margin-right: 100px;
 }
 
-.form-control {
+.form-control-1 {
   display: flex;
   margin-bottom: 15px;
   height: 50px;
@@ -390,9 +553,6 @@ section {
   border-radius: 5px;
   border-width: 1px;
   padding: 20px;
-}
-
-.form-input::placeholder {
 }
 
 .message {
@@ -407,38 +567,28 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-#footer {
+#Footer {
   background: #000000;
   color: rgb(186, 186, 186);
   font-size: 14px;
   text-align: center;
   padding: 20px 0px;
 }
-#footer h3 {
+#Footer h3 {
   font-size: 20px;
   font-weight: 500;
-  position: relative;
   text-align: center;
-  font-family: "Poppins", sans-serif;
-  padding: 0;
-}
-#footer h3 {
-  font-size: 20px;
-  font-weight: 500;
-  position: relative;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
   padding: 0;
 }
 
-#footer .social-links a {
+#Footer .social-links a {
   font-size: 16px;
   display: inline-block;
   background: #000000;
   color: rgb(186, 186, 186);
   line-height: 1;
   padding: 8px 0;
-  margin-right: 4px;
+  margin: 0px 4px;
   border-radius: 50%;
   text-align: center;
   justify-content: center;
@@ -447,12 +597,12 @@ section {
   transition: 0.2s;
 }
 
-#footer p {
+#Footer p {
   margin-top: 12px;
   margin-bottom: 0px;
 }
 
-#footer .social-links a:hover {
+#Footer .social-links a:hover {
   color: #008793;
 
   text-decoration: none;
