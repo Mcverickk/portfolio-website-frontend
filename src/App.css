@@ -1,5 +1,5 @@
 body {
-  font-family: "Jeko";
+  font-family: "Jeko", sans-serif;
 
   color: #000000;
 }
@@ -69,7 +69,7 @@ a:hover {
   width: 100%;
   overflow: hidden;
   transition: 0.3s;
-  font-family: "Jeko";
+  font-family: "Jeko", sans-serif;
 }
 
 .nav-menu a i,
@@ -127,50 +127,50 @@ a:hover {
 --------------------------------------------------------------*/
 
 @font-face {
-  font-family: "Jeko";
+  font-family: "Jeko", sans-serif;
   src: url(../public/font-jeko/JekoThin.ttf);
   font-weight: 100;
 }
 
 @font-face {
-  font-family: "Jeko";
+  font-family: "Jeko", sans-serif;
   src: url(../public/font-jeko/JekoExtraLight.ttf);
   font-weight: 200;
 }
 @font-face {
-  font-family: "Jeko";
+  font-family: "Jeko", sans-serif;
   src: url(../public/font-jeko/JekoLight.ttf);
   font-weight: 300;
 }
 
 @font-face {
-  font-family: "Jeko";
+  font-family: "Jeko", sans-serif;
   src: url(../public/font-jeko/JekoRegular.ttf);
   font-weight: 400;
 }
 @font-face {
-  font-family: "Jeko";
+  font-family: "Jeko", sans-serif;
   src: url(../public/font-jeko/JekoMedium.ttf);
   font-weight: 500;
 }
 @font-face {
-  font-family: "Jeko";
+  font-family: "Jeko", sans-serif;
   src: url(../public/font-jeko/JekoSemiBold.ttf);
   font-weight: 600;
 }
 
 @font-face {
-  font-family: "Jeko";
+  font-family: "Jeko", sans-serif;
   src: url(../public/font-jeko/JekoBold.ttf);
   font-weight: 700;
 }
 @font-face {
-  font-family: "Jeko";
+  font-family: "Jeko", sans-serif;
   src: url(../public/font-jeko/JekoExtraBold.ttf);
   font-weight: 800;
 }
 @font-face {
-  font-family: "Jeko";
+  font-family: "Jeko", sans-serif;
   src: url(../public/font-jeko/JekoBlack.ttf);
   font-weight: 900;
 }
@@ -217,7 +217,7 @@ a:hover {
   font-size: 50px;
 
   line-height: 56px;
-  font-family: "Jeko";
+  font-family: "Jeko", sans-serif;
   font-weight: 900;
 }
 
@@ -225,7 +225,7 @@ a:hover {
   margin: 15px 0 0 0;
   font-size: 20px;
   /* font-family: "Poppins", sans-serif; */
-  font-family: "Jeko";
+  font-family: "Jeko", sans-serif;
 
   font-weight: 600;
 }
@@ -297,7 +297,7 @@ a:hover {
   margin-bottom: 30px;
   margin-top: 100px;
   font-size: 40px;
-  font-family: "Jeko";
+  font-family: "Jeko", sans-serif;
   font-weight: 800;
   color: rgb(0, 0, 0);
   /* background-image: linear-gradient(to right top, #004d7a, #008793, #00bf72);
@@ -305,7 +305,7 @@ a:hover {
   -webkit-text-fill-color: transparent; */
 }
 .bio {
-  font-family: "Jeko";
+  font-family: "Jeko", sans-serif;
   font-weight: 500;
   font-size: 20px;
   padding: 20px 100px;
@@ -322,7 +322,7 @@ a:hover {
   color: #000;
   text-align: center;
   font-size: 40px;
-  font-family: "Jeko";
+  font-family: "Jeko", sans-serif;
   font-weight: 800;
   margin-bottom: 70px;
 }
@@ -339,7 +339,7 @@ a:hover {
 .comapanyNameHeader {
   font-size: 20px;
   /* font-family: "Poppins", sans-serif; */
-  font-family: "Jeko";
+  font-family: "Jeko", sans-serif;
   font-weight: 700;
 }
 
@@ -353,7 +353,7 @@ a:hover {
   padding-top: 20px;
   font-size: 15px;
   /* font-family: "Poppins", sans-serif; */
-  font-family: "Jeko";
+  font-family: "Jeko", sans-serif;
   font-weight: 600;
 }
 
@@ -364,7 +364,7 @@ a:hover {
   text-align: right;
   padding: 15px 20px;
   font-size: 18px;
-  font-family: "Jeko";
+  font-family: "Jeko", sans-serif;
   font-weight: 600;
 }
 
@@ -403,7 +403,7 @@ a:hover {
   -webkit-text-fill-color: transparent;
   color: #ffffff;
   margin-bottom: 50px;
-  font-family: "Jeko";
+  font-family: "Jeko", sans-serif;
   font-weight: 800;
   font-size: 40px;
 }
@@ -421,7 +421,7 @@ a:hover {
   padding-top: 20px;
   color: #52a01b;
   font-size: 13px;
-  font-family: "Jeko";
+  font-family: "Jeko", sans-serif;
   font-weight: 500;
 }
 
@@ -431,7 +431,7 @@ a:hover {
   padding-top: 20px;
   color: #0089af;
   font-size: 13px;
-  font-family: "Jeko";
+  font-family: "Jeko", sans-serif;
   font-weight: 500;
 }
 
@@ -441,7 +441,7 @@ a:hover {
   padding-top: 20px;
   color: #b94807;
   font-size: 13px;
-  font-family: "Jeko";
+  font-family: "Jeko", sans-serif;
   font-weight: 500;
 }
 
@@ -492,7 +492,7 @@ a:hover {
 
 .projectTitle {
   font-size: 28px;
-  font-family: "Jeko";
+  font-family: "Jeko", sans-serif;
   font-weight: 600;
 }
 
@@ -545,7 +545,7 @@ a:hover {
 
 .sectionTitle {
   font-size: 40px;
-  font-family: "Jeko";
+  font-family: "Jeko", sans-serif;
   font-weight: 800;
 }
 
@@ -560,7 +560,7 @@ a:hover {
   margin-top: 50px;
   margin-bottom: 20px;
   font-size: 25px;
-  font-family: "Jeko";
+  font-family: "Jeko", sans-serif;
   font-weight: 600;
 }
 
@@ -569,7 +569,7 @@ a:hover {
   margin-top: 50px;
   margin-bottom: 20px;
   font-size: 25px;
-  font-family: "Jeko";
+  font-family: "Jeko", sans-serif;
   font-weight: 600;
 }
 
@@ -578,7 +578,7 @@ a:hover {
   margin-top: 50px;
   margin-bottom: 20px;
   font-size: 25px;
-  font-family: "Jeko";
+  font-family: "Jeko", sans-serif;
   font-weight: 600;
 }
 
@@ -619,7 +619,7 @@ a:hover {
   font-size: 22px;
   text-align: center;
   padding: 0;
-  font-family: "Jeko";
+  font-family: "Jeko", sans-serif;
   font-weight: 500;
 }
 
@@ -641,7 +641,7 @@ a:hover {
 
 #Footer p {
   padding-top: 7px;
-  font-family: "Jeko";
+  font-family: "Jeko", sans-serif;
   font-weight: 300;
 }
 
