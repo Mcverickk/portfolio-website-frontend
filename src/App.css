@@ -57,7 +57,7 @@ a:hover {
 .nav-menu a:focus {
   display: flex;
   align-items: center;
-  color: rgb(185, 185, 185);
+  color: #ceebfa;
 
   padding: 10px 18px;
   margin-bottom: 8px;
@@ -105,13 +105,13 @@ a:hover {
 .nav-menu.active span,
 .nav-menu.active:focus span,
 .nav-menu li:hover > a span {
-  color: #b9edff;
+  color: #ceebfa;
 }
 
 .nav-menu a:hover,
 .nav-menu li:hover > a {
   width: 100%;
-  color: #b9edff;
+  color: #ceebfa;
 }
 
 .nav-menu a:hover span,
@@ -180,10 +180,11 @@ a:hover {
   background-size: cover;
   position: relative;
   background-image: url(../public/bg.jpeg);
+  padding-bottom: 150px;
 }
 
 .heroo {
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 #hero {
@@ -208,7 +209,15 @@ a:hover {
 
 #hero .dpimage {
   border-radius: 200px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.392);
 }
+
+/* #hero .imageCircle {
+  border: #1d364f solid;
+  padding: 5px;
+  border-color: #459cc4;
+  border-radius: 150px;
+} */
 
 #hero h1 {
   margin: 0;
@@ -218,6 +227,22 @@ a:hover {
   line-height: 56px;
   font-family: "Jeko", sans-serif;
   font-weight: 900;
+}
+
+#hero .downloadResume {
+  margin-top: 40px;
+  border: none;
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, #1d364f 10%, #459cc4 100%);
+
+  padding: 10px 10px;
+  font-family: "Jeko", sans-serif;
+  color: #ceebfa;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+}
+
+#hero .downloadResume:hover {
+  box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.4);
 }
 
 #hero p {
@@ -283,12 +308,15 @@ a:hover {
 --------------------------------------------------------------*/
 
 .about {
-  color: rgb(0, 0, 0);
+  color: #1d364f;
+  background-image: url(../public/bg5.png);
   padding-bottom: 70px;
+  padding-top: 100px;
 }
 
 .section-about {
   text-align: center;
+  justify-content: center;
 }
 
 .about-title {
@@ -311,12 +339,21 @@ a:hover {
   padding: 20px 100px;
 }
 
+.line {
+  align-items: center;
+
+  width: 300px;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
 /*--------------------------------------------------------------
 # Experience
 --------------------------------------------------------------*/
 
 #experience {
   margin-bottom: 100px;
+  color: #1d364f;
 }
 .experience-title {
   color: #1d364f;
@@ -370,7 +407,7 @@ a:hover {
 
 /* Change the color of links on mouse-over */
 #experience .nav-link:hover {
-  border-color: #00bf72;
+  border-color: #64b9d6;
 }
 
 /* Add a color to the active/current link */
@@ -380,10 +417,10 @@ a:hover {
 }
 
 #experience .nav-link {
-  border-right: #d9d9d9 solid;
+  border-right: #ffffff solid;
   border-width: 5px;
   border-radius: 0px;
-  border-color: #d9d9d9;
+  border-color: #1d364f1b;
   color: #1d364f;
   background-color: transparent;
 }
@@ -499,7 +536,7 @@ a:hover {
 .socialicon1 {
   font-size: 20px;
   padding: 10px;
-  color: #000000;
+  color: #1d364f;
 }
 
 .projectDetails {
@@ -523,7 +560,7 @@ a:hover {
 
 .bubble {
   border: solid;
-  border-color: #000000;
+
   border-width: 0px;
   border-radius: 10px;
   background-color: #cfe0e9;
@@ -533,7 +570,7 @@ a:hover {
 }
 
 .bubbletext {
-  color: #000000;
+  color: #1d364f;
 }
 
 /*--------------------------------------------------------------
@@ -612,7 +649,7 @@ a:hover {
 --------------------------------------------------------------*/
 #Footer {
   background: #000000;
-  color: rgb(186, 186, 186);
+  color: #e2f5ff;
   font-size: 15px;
   text-align: center;
   padding: 20px 0px;
@@ -628,8 +665,8 @@ a:hover {
 #Footer .social-links a {
   font-size: 15px;
   display: inline-block;
-  background: #000000;
-  color: rgb(186, 186, 186);
+
+  color: #e2f5ff;
   line-height: 1;
   padding: 8px 0;
   margin: 0px 4px;

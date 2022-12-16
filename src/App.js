@@ -52,11 +52,6 @@ function App() {
                 </a>
               </li>
               <li>
-                <a href="#skills" class="nav-link scrollto">
-                  <i class="bi bi-gear"></i> <span>Skills</span>
-                </a>
-              </li>
-              <li>
                 <a href="#experience" class="nav-link scrollto">
                   <i class="bi bi-briefcase"></i> <span>Experience</span>
                 </a>
@@ -67,8 +62,8 @@ function App() {
                 </a>
               </li>
               <li>
-                <a href="#contact" class="nav-link scrollto">
-                  <i class="bi bi-envelope"></i> <span>Contact</span>
+                <a href="#skills" class="nav-link scrollto">
+                  <i class="bi bi-gear"></i> <span>Skills</span>
                 </a>
               </li>
             </ul>
@@ -94,7 +89,14 @@ function App() {
             data-aos-duration="1000"
           >
             <img class="dpimage" src={props.dp} width="150px" />
+
+            <div>
+              <a href="../ChiragAgarwal_Resume_v2.pdf" download>
+                <button className="downloadResume">Download Resume</button>
+              </a>
+            </div>
           </div>
+
           <div data-aos="fade-right" data-aos-delay="100">
             <h1>{props.name}</h1>
             <p>
@@ -171,74 +173,11 @@ function App() {
       <div class="container">
         <div class="section-about">
           <h2 class="about-title">Who am I?</h2>
-          <h3 class="bio" data-aos="fade-up" data-aos-duration="1000">
+          <h3 class="bio" data-aos="fade-up" data-aos-duration="500">
             {BIO}
           </h3>
+          <img src="seperator.png" class="line" />
         </div>
-
-        {/* <div class="row">
-          <div class="col-lg-4">
-            <img src="dp.jpg" class="img-fluid" alt="" />
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>UI/UX Designer &amp; Web Developer.</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li>
-                    <i class="bi bi-chevron-right"></i>{" "}
-                    <strong>Birthday:</strong> <span>1 May 1995</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-chevron-right"></i>{" "}
-                    <strong>Website:</strong> <span>www.example.com</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-chevron-right"></i> <strong>Phone:</strong>{" "}
-                    <span>+123 456 7890</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-chevron-right"></i> <strong>City:</strong>{" "}
-                    <span>New York, USA</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li>
-                    <i class="bi bi-chevron-right"></i> <strong>Age:</strong>{" "}
-                    <span>30</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-chevron-right"></i> <strong>Degree:</strong>{" "}
-                    <span>Master</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-chevron-right"></i>{" "}
-                    <strong>PhEmailone:</strong> <span>email@example.com</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-chevron-right"></i>{" "}
-                    <strong>Freelance:</strong> <span>Available</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <p>
-              Officiis eligendi itaque labore et dolorum mollitia officiis optio
-              vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor
-              incidunt officia tempore. Et eius omnis. Cupiditate ut dicta
-              maxime officiis quidem quia. Sed et consectetur qui quia
-              repellendus itaque neque. Aliquid amet quidem ut quaerat
-              cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium
-              dolores.
-            </p>
-          </div>
-        </div> */}
       </div>
     );
   };
