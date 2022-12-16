@@ -1,20 +1,20 @@
 body {
   font-family: "Jeko", sans-serif;
-
-  color: #000000;
+  background-color: #224d6b;
+  color: #1d364f;
 }
 
 a {
-  color: #000000;
+  color: #1d364f;
   text-decoration: none;
 }
 
 a:hover {
-  color: #000000;
+  color: #1d364f;
   text-decoration: none;
 }
 .backgroundColor {
-  /* background-color: #000000; */
+  background-color: #ceebfa;
 }
 
 /*--------------------------------------------------------------
@@ -64,7 +64,7 @@ a:hover {
   transition: 0.3s;
   font-size: 15px;
   border-radius: 50px;
-  background: #051937;
+  background: #1d364f;
   height: 56px;
   width: 100%;
   overflow: hidden;
@@ -97,10 +97,7 @@ a:hover {
 }
 
 .nav-menu a:hover,
-.nav-menu .active:focus,
-.nav-menu .active,
 .nav-menu li:hover > a {
-  color: #a8eb12;
   background: #051937;
 }
 
@@ -108,13 +105,13 @@ a:hover {
 .nav-menu.active span,
 .nav-menu.active:focus span,
 .nav-menu li:hover > a span {
-  color: #a8eb12;
+  color: #b9edff;
 }
 
 .nav-menu a:hover,
 .nav-menu li:hover > a {
   width: 100%;
-  color: #a8eb12;
+  color: #b9edff;
 }
 
 .nav-menu a:hover span,
@@ -182,6 +179,7 @@ a:hover {
   height: 100vh;
   background-size: cover;
   position: relative;
+  background-image: url(../public/bg.jpeg);
 }
 
 .heroo {
@@ -189,7 +187,7 @@ a:hover {
 }
 
 #hero {
-  color: #000000;
+  color: #1d364f;
   position: relative;
   bottom: 0;
   top: 0;
@@ -215,6 +213,7 @@ a:hover {
 #hero h1 {
   margin: 0;
   font-size: 50px;
+  color: #1d364f;
 
   line-height: 56px;
   font-family: "Jeko", sans-serif;
@@ -226,7 +225,7 @@ a:hover {
   font-size: 20px;
   /* font-family: "Poppins", sans-serif; */
   font-family: "Jeko", sans-serif;
-
+  color: #1d364f;
   font-weight: 500;
 }
 
@@ -241,14 +240,14 @@ a:hover {
 #hero .social-links a {
   font-size: 20px;
   display: inline-block;
-  color: #000000;
+  color: #1d364f;
   line-height: 1;
   margin-right: 30px;
   transition: 0.3s;
 }
 
 #hero .social-links a:hover {
-  color: #ffffff;
+  color: #459cc4;
 }
 
 .contactInfo {
@@ -263,7 +262,7 @@ a:hover {
 .contactDetails {
   font-size: 15px;
   padding: 0px 20px;
-  color: #000;
+  color: #1d364f;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
 }
@@ -271,21 +270,21 @@ a:hover {
 .contactArea {
   font-size: 15px;
 
-  color: #000;
+  color: #1d364f;
   text-decoration: none;
 }
 
 .contactArea:hover {
-  color: #000;
+  color: #1d364f;
 }
 
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
 .about {
   color: rgb(0, 0, 0);
-
-  margin-bottom: 140px;
+  padding-bottom: 70px;
 }
 
 .section-about {
@@ -293,18 +292,19 @@ a:hover {
 }
 
 .about-title {
-  margin: 10px 0px;
+  padding: 10px 0px;
   margin-bottom: 30px;
-  margin-top: 100px;
+  padding-top: 100px;
   font-size: 40px;
   font-family: "Jeko", sans-serif;
   font-weight: 800;
-  color: rgb(0, 0, 0);
+  color: #1d364f;
   /* background-image: linear-gradient(to right top, #004d7a, #008793, #00bf72);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
 }
 .bio {
+  color: #1d364f;
   font-family: "Jeko", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -319,7 +319,7 @@ a:hover {
   margin-bottom: 100px;
 }
 .experience-title {
-  color: #000;
+  color: #1d364f;
   text-align: center;
   font-size: 40px;
   font-family: "Jeko", sans-serif;
@@ -360,7 +360,7 @@ a:hover {
 /* Style the links inside the pill navigation menu */
 
 .nav-pills a {
-  color: rgb(0, 0, 0);
+  color: #1d364f;
   text-align: right;
   padding: 15px 20px;
   font-size: 18px;
@@ -375,7 +375,7 @@ a:hover {
 
 /* Add a color to the active/current link */
 #experience .nav-link.active {
-  border-color: black;
+  border-color: #1d364f;
   background-color: transparent;
 }
 
@@ -384,7 +384,7 @@ a:hover {
   border-width: 5px;
   border-radius: 0px;
   border-color: #d9d9d9;
-  color: black;
+  color: #1d364f;
   background-color: transparent;
 }
 
@@ -392,13 +392,13 @@ a:hover {
 # Projects
 --------------------------------------------------------------*/
 #projects {
-  color: rgb(0, 0, 0);
+  color: #1d364f;
   margin-bottom: 100px;
 }
 
 #projects .projectsHeader {
   text-align: center;
-  background-color: rgb(0, 0, 0);
+  background-color: #1d364f;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #ffffff;
@@ -446,7 +446,7 @@ a:hover {
 }
 
 .articleCard {
-  background-color: rgb(255, 255, 255);
+  background-color: #e2f5ff;
   width: 320px;
   height: 330px;
   border-top: solid;
@@ -457,7 +457,7 @@ a:hover {
   box-shadow: 3px 3px 30px #00000030;
 }
 .blockchainCard {
-  background-color: rgb(255, 255, 255);
+  background-color: #e2f5ff;
   width: 320px;
   height: 330px;
   border-top: solid;
@@ -469,7 +469,7 @@ a:hover {
 }
 
 .webDevCard {
-  background-color: rgb(255, 255, 255);
+  background-color: #e2f5ff;
   width: 320px;
   height: 330px;
   border-top: solid;
@@ -526,7 +526,7 @@ a:hover {
   border-color: #000000;
   border-width: 0px;
   border-radius: 10px;
-  background-color: #d6d6d66d;
+  background-color: #cfe0e9;
   font-size: 13px;
   margin-right: 20px;
   margin-bottom: 10px;
@@ -541,7 +541,7 @@ a:hover {
 --------------------------------------------------------------*/
 
 .skills {
-  color: #000000;
+  color: #1d364f;
   padding-bottom: 50px;
 }
 
