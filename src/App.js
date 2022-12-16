@@ -630,21 +630,23 @@ function App() {
         />
       </section>
 
-      <section id="about" class="about">
-        <About />
-      </section>
+      <div className="backgroundColor">
+        <section id="about" class="about">
+          <About />
+        </section>
 
-      <section id="experience" class="experience">
-        <Experience />
-      </section>
+        <section id="experience" class="experience">
+          <Experience />
+        </section>
 
-      <section id="projects" class="projects">
-        <Projects />
-      </section>
+        <section id="projects" class="projects">
+          <Projects />
+        </section>
 
-      <section id="skills" class="skills">
-        <SkillSection />
-      </section>
+        <section id="skills" class="skills">
+          <SkillSection />
+        </section>
+      </div>
 
       <Footer
         name={NAME}
