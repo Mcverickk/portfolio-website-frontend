@@ -227,7 +227,7 @@ a:hover {
   /* font-family: "Poppins", sans-serif; */
   font-family: "Jeko", sans-serif;
 
-  font-weight: 600;
+  font-weight: 500;
 }
 
 #hero p span {
@@ -354,7 +354,7 @@ a:hover {
   font-size: 15px;
   /* font-family: "Poppins", sans-serif; */
   font-family: "Jeko", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* Style the links inside the pill navigation menu */
@@ -365,7 +365,7 @@ a:hover {
   padding: 15px 20px;
   font-size: 18px;
   font-family: "Jeko", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* Change the color of links on mouse-over */
@@ -506,6 +506,8 @@ a:hover {
   text-align: left;
   padding: 0px 30px;
   font-size: 14px;
+  font-family: "Jeko", sans-serif;
+  font-weight: 400;
 }
 
 .bubbleList {
@@ -561,7 +563,7 @@ a:hover {
   margin-bottom: 20px;
   font-size: 25px;
   font-family: "Jeko", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 #blockchainSkillSection .skill-title {
@@ -570,7 +572,7 @@ a:hover {
   margin-bottom: 20px;
   font-size: 25px;
   font-family: "Jeko", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 #webDevSkillSection .skill-title {
@@ -579,7 +581,7 @@ a:hover {
   margin-bottom: 20px;
   font-size: 25px;
   font-family: "Jeko", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .skilllist {
