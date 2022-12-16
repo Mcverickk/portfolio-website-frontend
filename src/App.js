@@ -246,10 +246,10 @@ function App() {
   const Experience = () => {
     return (
       <div class="experienceBox">
-        <h2 class="experience-title">WORK EXPERIENCE</h2>
+        <h2 class="experience-title">Work Experience</h2>
         <Tab.Container id="left-tabs-example" defaultActiveKey="tab1">
           <div className="companyBox">
-            <Col sm={4} className="leftCol">
+            <Col sm={3} className="leftCol">
               <Nav
                 id="experience"
                 variant="pills"
@@ -286,7 +286,7 @@ function App() {
                 </Nav.Item>
               </Nav>
             </Col>
-            <Col sm={6}>
+            <Col sm={5}>
               <Tab.Content>
                 <Tab.Pane eventKey="tab1">
                   <GetWorkDetails info="tab1" />
@@ -510,7 +510,7 @@ function App() {
   const SkillSection = () => {
     return (
       <div class="skills-header">
-        <h2 class="sectionTitle">SKILLS</h2>
+        <h2 class="sectionTitle">Skills</h2>
         <div class="skillsBox" data-aos="zoom-up" data-aos-duration="5000">
           <LanguageSkills />
           <BlockchainSkills />

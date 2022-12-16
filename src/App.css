@@ -1,5 +1,6 @@
 body {
-  font-family: "Unbounded", cursive;
+  font-family: "Jeko";
+
   color: #000000;
 }
 
@@ -68,6 +69,7 @@ a:hover {
   width: 100%;
   overflow: hidden;
   transition: 0.3s;
+  font-family: "Jeko";
 }
 
 .nav-menu a i,
@@ -78,7 +80,7 @@ a:hover {
 .nav-menu a span,
 .nav-menu a:focus span {
   padding: 0 5px 0 7px;
-  color: #45505b;
+  color: #ffffff;
 }
 
 @media (min-width: 992px) {
@@ -103,8 +105,8 @@ a:hover {
 }
 
 .nav-menu a:hover span,
-.nav-menu .active span,
-.nav-menu .active:focus span,
+.nav-menu.active span,
+.nav-menu.active:focus span,
 .nav-menu li:hover > a span {
   color: #a8eb12;
 }
@@ -120,6 +122,58 @@ a:hover {
   display: block;
 }
 
+/*--------------------------------------------------------------
+# Fonts
+--------------------------------------------------------------*/
+
+@font-face {
+  font-family: "Jeko";
+  src: url(../public/font-jeko/JekoThin.ttf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Jeko";
+  src: url(../public/font-jeko/JekoExtraLight.ttf);
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Jeko";
+  src: url(../public/font-jeko/JekoLight.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Jeko";
+  src: url(../public/font-jeko/JekoRegular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Jeko";
+  src: url(../public/font-jeko/JekoMedium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Jeko";
+  src: url(../public/font-jeko/JekoSemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Jeko";
+  src: url(../public/font-jeko/JekoBold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Jeko";
+  src: url(../public/font-jeko/JekoExtraBold.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Jeko";
+  src: url(../public/font-jeko/JekoBlack.ttf);
+  font-weight: 900;
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -161,15 +215,19 @@ a:hover {
 #hero h1 {
   margin: 0;
   font-size: 50px;
-  font-weight: 700;
+
   line-height: 56px;
-  font-family: "Unbounded", cursive;
+  font-family: "Jeko";
+  font-weight: 900;
 }
 
 #hero p {
   margin: 15px 0 0 0;
   font-size: 20px;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Jeko";
+
+  font-weight: 600;
 }
 
 #hero p span {
@@ -207,6 +265,7 @@ a:hover {
   padding: 0px 20px;
   color: #000;
   text-decoration: none;
+  font-family: "Poppins", sans-serif;
 }
 
 .contactArea {
@@ -238,14 +297,16 @@ a:hover {
   margin-bottom: 30px;
   margin-top: 100px;
   font-size: 40px;
-  font-family: "Unbounded", cursive;
+  font-family: "Jeko";
+  font-weight: 800;
   color: rgb(0, 0, 0);
   /* background-image: linear-gradient(to right top, #004d7a, #008793, #00bf72);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
 }
 .bio {
-  font-family: "Poppins", sans-serif;
+  font-family: "Jeko";
+  font-weight: 500;
   font-size: 20px;
   padding: 20px 100px;
 }
@@ -261,7 +322,8 @@ a:hover {
   color: #000;
   text-align: center;
   font-size: 40px;
-  font-family: "Unbounded", cursive;
+  font-family: "Jeko";
+  font-weight: 800;
   margin-bottom: 70px;
 }
 .companyBox {
@@ -276,16 +338,23 @@ a:hover {
 
 .comapanyNameHeader {
   font-size: 20px;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Jeko";
+  font-weight: 700;
 }
 
 .workPeriod {
   font-size: 13px;
   padding-left: 3px;
+  font-family: "Poppins", sans-serif;
 }
 
 .workDetailList {
   padding-top: 20px;
   font-size: 15px;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Jeko";
+  font-weight: 600;
 }
 
 /* Style the links inside the pill navigation menu */
@@ -295,6 +364,8 @@ a:hover {
   text-align: right;
   padding: 15px 20px;
   font-size: 18px;
+  font-family: "Jeko";
+  font-weight: 600;
 }
 
 /* Change the color of links on mouse-over */
@@ -332,7 +403,8 @@ a:hover {
   -webkit-text-fill-color: transparent;
   color: #ffffff;
   margin-bottom: 50px;
-  font-family: "Unbounded", cursive;
+  font-family: "Jeko";
+  font-weight: 800;
   font-size: 40px;
 }
 
@@ -349,24 +421,28 @@ a:hover {
   padding-top: 20px;
   color: #52a01b;
   font-size: 13px;
+  font-family: "Jeko";
+  font-weight: 500;
 }
 
 .projectBlockchain {
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 20px;
-
   color: #0089af;
   font-size: 13px;
+  font-family: "Jeko";
+  font-weight: 500;
 }
 
 .projectWebDev {
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 20px;
-
-  color: #81007c;
+  color: #b94807;
   font-size: 13px;
+  font-family: "Jeko";
+  font-weight: 500;
 }
 
 .articleCard {
@@ -415,6 +491,9 @@ a:hover {
 }
 
 .projectTitle {
+  font-size: 28px;
+  font-family: "Jeko";
+  font-weight: 600;
 }
 
 .socialicon1 {
@@ -466,7 +545,8 @@ a:hover {
 
 .sectionTitle {
   font-size: 40px;
-  font-family: "Unbounded", cursive;
+  font-family: "Jeko";
+  font-weight: 800;
 }
 
 .skills-header {
@@ -480,6 +560,8 @@ a:hover {
   margin-top: 50px;
   margin-bottom: 20px;
   font-size: 25px;
+  font-family: "Jeko";
+  font-weight: 600;
 }
 
 #blockchainSkillSection .skill-title {
@@ -487,6 +569,8 @@ a:hover {
   margin-top: 50px;
   margin-bottom: 20px;
   font-size: 25px;
+  font-family: "Jeko";
+  font-weight: 600;
 }
 
 #webDevSkillSection .skill-title {
@@ -494,6 +578,8 @@ a:hover {
   margin-top: 50px;
   margin-bottom: 20px;
   font-size: 25px;
+  font-family: "Jeko";
+  font-weight: 600;
 }
 
 .skilllist {
@@ -530,10 +616,11 @@ a:hover {
   padding: 20px 0px;
 }
 #Footer h3 {
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 22px;
   text-align: center;
   padding: 0;
+  font-family: "Jeko";
+  font-weight: 500;
 }
 
 #Footer .social-links a {
@@ -553,7 +640,9 @@ a:hover {
 }
 
 #Footer p {
-  padding-top: 12px;
+  padding-top: 7px;
+  font-family: "Jeko";
+  font-weight: 300;
 }
 
 #Footer .social-links a:hover {
