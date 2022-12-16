@@ -1,5 +1,5 @@
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Unbounded", cursive;
   color: #000000;
 }
 
@@ -11,15 +11,6 @@ a {
 a:hover {
   color: #000000;
   text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Raleway", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -201,6 +192,7 @@ h6 {
     #00bf72,
     #a8eb12
   );
+  color: #000000;
   position: relative;
   bottom: 0;
   top: 0;
@@ -211,6 +203,7 @@ h6 {
 #hero .centerinfo {
   display: flex;
   margin: 100px;
+  margin-top: 150px;
 }
 
 #hero .dp {
@@ -224,21 +217,19 @@ h6 {
 
 #hero h1 {
   margin: 0;
-  font-size: 64px;
+  font-size: 50px;
   font-weight: 700;
   line-height: 56px;
-  color: #000000;
+  font-family: "Unbounded", cursive;
 }
 
 #hero p {
-  color: #000000;
   margin: 15px 0 0 0;
-  font-size: 26px;
+  font-size: 20px;
   font-family: "Poppins", sans-serif;
 }
 
 #hero p span {
-  color: #000000;
   letter-spacing: 1px;
 }
 
@@ -247,11 +238,11 @@ h6 {
 }
 
 #hero .social-links a {
-  font-size: 24px;
+  font-size: 20px;
   display: inline-block;
   color: #000000;
   line-height: 1;
-  margin-right: 20px;
+  margin-right: 30px;
   transition: 0.3s;
 }
 
@@ -259,150 +250,186 @@ h6 {
   color: #ffffff;
 }
 
+.contactInfo {
+  margin: 30px 0px;
+}
+.contactInfoRow {
+  display: flex;
+  align-items: baseline;
+  font-size: 15px;
+}
+
+.contactDetails {
+  font-size: 15px;
+  padding: 0px 20px;
+  color: #000;
+  text-decoration: none;
+}
+
+.contactArea {
+  font-size: 15px;
+
+  color: #000;
+  text-decoration: none;
+}
+
+.contactArea:hover {
+  color: #000;
+}
+
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
-section {
-  padding: 70px;
-}
+/* section {
+  padding: 50px;
+} */
 
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 .about {
-  color: white;
-  background-color: #000000;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  margin-bottom: 140px;
 }
 
-/*--------------------------------------------------------------
-# Skills
---------------------------------------------------------------*/
-
-.skills {
-  background-image: linear-gradient(
-    to right top,
-    #051937,
-    #004d7a,
-    #008793,
-    #00bf72
-  );
-  background-color: #000000;
-  color: #000000;
-}
-
-.skills-header {
+.section-about {
   text-align: center;
-
-  margin-bottom: 100px;
 }
 
-.skill-title {
-  text-align: center;
-  margin-top: 50px;
+.about-title {
+  padding: 10px 30px;
+  margin-top: 100px;
+  font-size: 40px;
+  font-family: "Unbounded", cursive;
+  color: rgb(0, 0, 0);
+  /* background-image: linear-gradient(to right top, #004d7a, #008793, #00bf72);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }
-
-.skilllist {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 10px;
-  justify-content: center;
-  align-items: center;
-}
-
-.skillitem {
-  padding: 30px;
-  margin: 20px;
-  background-color: rgba(255, 255, 255, 0.07);
-  border-radius: 20px;
-  box-shadow: 5px 5px 20px #00000030;
+.bio {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  padding: 20px 100px;
 }
 
 /*--------------------------------------------------------------
 # Experience
 --------------------------------------------------------------*/
+
 #experience {
-  background-color: #000000;
-  color: rgb(255, 255, 255);
-}
-.experienceHeader {
-  text-align: center;
   margin-bottom: 100px;
-  color: rgb(255, 255, 255);
 }
-
-.experienceBox {
-}
-
-.experienceRow {
-  justify-content: center;
-}
-
-.companyColumn {
-}
-
-.companies {
-  color: #ffffff;
+.experience-title {
+  color: #000;
   text-align: center;
+  font-size: 40px;
+  font-family: "Unbounded", cursive;
+  margin-bottom: 50px;
 }
-
-.company {
-  border-right: #535353 solid;
-  background-color: #282828;
-  border-width: 5px;
-  height: 40px;
-  padding: 10px;
-}
-
-.company:current {
-  border-right: #ad0000 solid;
-  background-color: #282828;
-  border-width: 5px;
-  height: 40px;
-  padding: 10px;
+.companyBox {
+  justify-content: center;
+  padding-left: 100px;
 }
 
 .workDetailBox {
+  margin: 0px 100px;
 }
 
 .comapanyNameHeader {
-  padding: 0px 60px;
-  text-align: left;
+  font-size: 20px;
 }
 
 .workPeriod {
-  padding: 0px 60px;
+  font-size: 13px;
+  padding-left: 3px;
 }
 
 .workDetailList {
-  padding: 20px 120px;
+  padding-top: 20px;
+  font-size: 15px;
 }
 
-.workDetailItem {
+/* Style the links inside the pill navigation menu */
+
+.nav-pills a {
+  color: rgb(0, 0, 0);
+  text-align: right;
+  padding: 15px 20px;
+  font-size: 18px;
 }
 
-.workDetails {
+/* Change the color of links on mouse-over */
+#experience .nav-link:hover {
+  border-color: #00bf72;
+}
+
+/* Add a color to the active/current link */
+#experience .nav-link.active {
+  border-color: black;
+  background-color: transparent;
+}
+
+#experience .nav-link {
+  border-right: #d9d9d9 solid;
+  border-width: 5px;
+  border-radius: 0px;
+  border-color: #d9d9d9;
+  color: black;
+  background-color: transparent;
 }
 
 /*--------------------------------------------------------------
 # Projects
 --------------------------------------------------------------*/
 #projects {
-  background-color: #000000;
-  color: black;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  margin-bottom: 100px;
 }
 
 #projects .projectsHeader {
   text-align: center;
-  color: white;
-  margin-bottom: 40px;
+  background-color: rgb(0, 0, 0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #ffffff;
+  margin-bottom: 50px;
+  font-family: "Unbounded", cursive;
+  font-size: 40px;
 }
 
 .projectCollection {
+  padding: 0px 100px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.projectArticle {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  color: #52a01b;
+  font-size: 13px;
+}
+
+.projectBlockchain {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+
+  color: #0089af;
+  font-size: 13px;
+}
+
+.projectWebDev {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+
+  color: #81007c;
+  font-size: 13px;
 }
 
 .articleCard {
@@ -411,37 +438,21 @@ section {
   height: 330px;
   border-top: solid;
   border-radius: 15px;
-  border-color: #58771a;
+  border-color: #52a01b;
   border-width: 10px;
   margin: 30px;
+  box-shadow: 3px 3px 30px #00000030;
 }
-.projectArticle {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 30px;
-
-  color: #58771a;
-  font-size: 12px;
-}
-
 .blockchainCard {
   background-color: rgb(255, 255, 255);
   width: 320px;
   height: 330px;
   border-top: solid;
   border-radius: 15px;
-  border-color: #006c8a;
+  border-color: #0089af;
   border-width: 10px;
   margin: 30px;
-}
-
-.projectBlockchain {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 30px;
-
-  color: #006c8a;
-  font-size: 12px;
+  box-shadow: 3px 3px 30px #00000030;
 }
 
 .webDevCard {
@@ -453,14 +464,7 @@ section {
   border-color: #b94807;
   border-width: 10px;
   margin: 30px;
-}
-.projectWebDev {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 30px;
-
-  color: #81007c;
-  font-size: 12px;
+  box-shadow: 3px 3px 30px #00000030;
 }
 
 .projectHeader {
@@ -477,20 +481,15 @@ section {
 }
 
 .socialicon1 {
-  font-size: 22px;
+  font-size: 20px;
   padding: 10px;
   color: #000000;
-}
-
-.socialicon2 {
-  align-items: center;
-  font-size: 22px;
 }
 
 .projectDetails {
   text-align: left;
   padding: 0px 30px;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .bubbleList {
@@ -520,48 +519,69 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Contact
+# Skills
 --------------------------------------------------------------*/
-.contactDiv {
+
+.skills {
+  /* background-image: linear-gradient(to right top, #004d7a, #008793); */
+  background-color: #ffffff;
+  color: #000000;
+  margin-bottom: 50px;
+}
+
+.sectionTitle {
+  font-size: 40px;
+  font-family: "Unbounded", cursive;
+}
+
+.skills-header {
+  text-align: center;
+
+  padding: 0px 100px;
+}
+
+#languageSkillSection .skill-title {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+#blockchainSkillSection .skill-title {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+#webDevSkillSection .skill-title {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.skilllist {
+  list-style: none;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
   justify-content: center;
   align-items: center;
 }
 
-#contact h2 {
-  font-weight: 900;
-}
+.skillitem {
+  padding: 30px;
+  margin: 20px 20px;
+  background-color: rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
 
-.imageDiv {
-  margin-right: 70px;
-}
-
-.formDiv {
-  margin-left: 70px;
-}
-
-.inputField {
-  margin-top: 40px;
-  margin-right: 50px;
-}
-
-.form-control-1 {
+  box-shadow: 3px 3px 30px #00000024;
   display: flex;
-  margin-bottom: 15px;
-  height: 50px;
-  width: 600px;
-  border-radius: 5px;
-  border-width: 1px;
-  padding: 20px;
-}
-
-.message {
+  align-items: center;
+  justify-content: center;
   height: 150px;
-}
-
-.message::placeholder {
-  vertical-align: top;
-  text-align: top;
 }
 
 /*--------------------------------------------------------------
@@ -570,7 +590,7 @@ section {
 #Footer {
   background: #000000;
   color: rgb(186, 186, 186);
-  font-size: 14px;
+  font-size: 15px;
   text-align: center;
   padding: 20px 0px;
 }
@@ -582,7 +602,7 @@ section {
 }
 
 #Footer .social-links a {
-  font-size: 16px;
+  font-size: 15px;
   display: inline-block;
   background: #000000;
   color: rgb(186, 186, 186);

@@ -4,6 +4,12 @@ const TWITTER = "https://twitter.com/mcverickk";
 const LINKEDIN = "https://www.linkedin.com/in/chiragagarwal2001/";
 const GITHUB = "https://github.com/Mcverickk";
 const MEDIUM = "https://medium.com/@Mcverick";
+const EMAIL = "chiragagarwal2001@gmail.com";
+const PHONE = "+91 8777859648";
+const LOCATION = "India";
+
+const BIO =
+  "I am a blockchain enthusiast exploring the financial and development side of Web3. As a Blockchain Developer, I have worked on various personal and professional projects. I have worked on projects relating to Web3 payment systems, NFTs, DeFi, zkSNARKs, and oracles. I love traveling & have a passion for photography, cricket, F1, and graphic designing.";
 
 const PROJECT1 = {
   TYPE: "BLOCKCHAIN",
@@ -74,6 +80,55 @@ const PROJECT8 = {
   LINK: "",
 };
 
+const WORK = {
+  YUSHU: {
+    ROLE: "Blockchain Developer Intern",
+    TIME: "SEPT 2022 - OCT 2022",
+    DETAILS: [
+      "Managed a project to build an ERC20 token launchpad with staking.",
+      "Documented the entire end-to-end structure & work of the launchpad project.",
+      "Created a detailed explainer on Fractional NFTs.",
+    ],
+  },
+  PAY3: {
+    ROLE: "Blockchain Developer Intern",
+    TIME: "FEB 2022 - AUG 2022",
+    DETAILS: [
+      "Researched various crypto exchanges & structured the execution of on-ramp & off-ramp payment systems.",
+      "Created and deployed smart contracts for batch payments on Ethereum & Polygon.",
+      "Built smart contracts that directly interacted with the Uniswap Router contract to swap tokens and send them to an address.",
+      "Worked on building a multi-wallet connect modal library, which the client can import to add multi-wallet connectivity with Metamask, Coinbase, Bitcoin, and WalletConnect to their applications.",
+    ],
+  },
+  BASE: {
+    ROLE: "Freelance Blockchain Developer",
+    TIME: "JUL 2022",
+    DETAILS: [
+      "Worked on implementing a UniswapV2 fork on Layer1 called Cube Network.",
+      "Explored & developed smart contracts involving Uniswap's Core & Router contracts.",
+      "Integrated swap and liquidity feature to the frontend of the protocol using React and Ethers.js.",
+    ],
+  },
+  KUBERA: {
+    ROLE: "Web3 Research Analyst",
+    TIME: "NOV 2021 - FEB 2022",
+    DETAILS: [
+      "Explored the financial side of the Web3 space and gained an understanding of various DeFi protocols.",
+      "Tracked DeFi protocols to understand how we can use them to generate yield.",
+      "Researched on few projects on Polkadot & Kusama.",
+    ],
+  },
+  DOPY: {
+    ROLE: "Head of Photography",
+    TIME: "JUL 2021 - JUN 2022",
+    DETAILS: [
+      "Managed an inventory of worth 15 lakh.",
+      "Trained a team of around 120 photographers.",
+      "Organized a photography contest with more than 900+ entries.",
+    ],
+  },
+};
+
 export {
   NAME,
   INSTAGRAM,
@@ -89,4 +144,9 @@ export {
   PROJECT6,
   PROJECT7,
   PROJECT8,
+  BIO,
+  WORK,
+  EMAIL,
+  PHONE,
+  LOCATION,
 };

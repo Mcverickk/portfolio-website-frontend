@@ -18,6 +18,11 @@ import {
   PROJECT6,
   PROJECT7,
   PROJECT8,
+  BIO,
+  WORK,
+  EMAIL,
+  PHONE,
+  LOCATION,
 } from "./constants";
 import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
@@ -29,20 +34,6 @@ function App() {
   const githubIcon = <i class="bi socialicon1 bi-github"></i>;
   const mediumIcon = <i class="bi socialicon1 bi-medium"></i>;
   const websiteIcon = <i class="bi socialicon1 bi-globe"></i>;
-
-  const [tabActive, setTabActive] = useState("tab1");
-
-  const handleTabClick = (value) => {
-    if (value === tabActive) {
-      return;
-    }
-
-    setTabActive(value);
-  };
-
-  // useEffect(() => {
-  //   GetWorkDetails();
-  // }, [tabActive]);
 
   const NavHeader = () => {
     return (
@@ -149,6 +140,26 @@ function App() {
                 <i class="bi bi-medium"></i>
               </a>
             </div>
+            <div class="contactInfo">
+              <div class="contactInfoRow">
+                <i class="bi bi-envelope-at-fill"></i>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=chiragagarwal2001@gmail.com"
+                  target="_blank"
+                  class="contactArea"
+                >
+                  <h6 class="contactDetails">{EMAIL}</h6>
+                </a>
+              </div>
+              <div class="contactInfoRow">
+                <i class="bi bi-telephone-fill"></i>
+                <h6 class="contactDetails">{PHONE}</h6>
+              </div>
+              <div class="contactInfoRow">
+                <i class="bi bi-geo-alt-fill"></i>
+                <h6 class="contactDetails">{LOCATION}</h6>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -157,18 +168,15 @@ function App() {
 
   const About = (props) => {
     return (
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>About</h2>
-          <p>
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-            fugiat sit in iste officiis commodi quidem hic quas.
-          </p>
+      <div class="container">
+        <div class="section-about">
+          <h2 class="about-title">Who am I?</h2>
+          <h3 class="bio" data-aos="fade-up" data-aos-duration="1000">
+            {BIO}
+          </h3>
         </div>
 
-        <div class="row">
+        {/* <div class="row">
           <div class="col-lg-4">
             <img src="dp.jpg" class="img-fluid" alt="" />
           </div>
@@ -230,95 +238,164 @@ function App() {
               dolores.
             </p>
           </div>
+        </div> */}
+      </div>
+    );
+  };
+
+  const Experience = () => {
+    return (
+      <div class="experienceBox">
+        <h2 class="experience-title">WORK EXPERIENCE</h2>
+        <Tab.Container id="left-tabs-example" defaultActiveKey="tab1">
+          <Row className="companyBox">
+            <Col sm={2} className="leftCol">
+              <Nav
+                id="experience"
+                variant="pills"
+                className="flex-column companyNav"
+              >
+                <Nav.Item className="companyItemTab1">
+                  <Nav.Link
+                    eventKey="tab1"
+                    class="active"
+                    className="companyLinkTab1"
+                  >
+                    Pay3
+                  </Nav.Link>
+                </Nav.Item>
+                <Nav.Item className="companyItemTab2">
+                  <Nav.Link eventKey="tab2" className="companyLinkTab2">
+                    Base Protocol
+                  </Nav.Link>
+                </Nav.Item>
+                <Nav.Item className="companyItemTab2">
+                  <Nav.Link eventKey="tab3" className="companyLinkTab2">
+                    Yushu Excellence
+                  </Nav.Link>
+                </Nav.Item>
+                <Nav.Item className="companyItemTab2">
+                  <Nav.Link eventKey="tab4" className="companyLinkTab2">
+                    Kubera Capital
+                  </Nav.Link>
+                </Nav.Item>
+                <Nav.Item className="companyItemTab2">
+                  <Nav.Link eventKey="tab5" className="companyLinkTab2">
+                    The Department of Photography
+                  </Nav.Link>
+                </Nav.Item>
+              </Nav>
+            </Col>
+            <Col sm={6}>
+              <Tab.Content>
+                <Tab.Pane eventKey="tab1">
+                  <GetWorkDetails info="tab1" />
+                </Tab.Pane>
+                <Tab.Pane eventKey="tab2">
+                  <GetWorkDetails info="tab2" />
+                </Tab.Pane>
+                <Tab.Pane eventKey="tab3">
+                  <GetWorkDetails info="tab3" />
+                </Tab.Pane>
+                <Tab.Pane eventKey="tab4">
+                  <GetWorkDetails info="tab4" />
+                </Tab.Pane>
+                <Tab.Pane eventKey="tab5">
+                  <GetWorkDetails info="tab5" />
+                </Tab.Pane>
+              </Tab.Content>
+            </Col>
+          </Row>
+        </Tab.Container>
+      </div>
+    );
+  };
+
+  const GetWorkDetails = (props) => {
+    let result;
+    if (props.info === "tab3") {
+      const details = WORK.YUSHU.DETAILS.map((t) => (
+        <li class="workDetailItem">
+          <p class="workDetails">{t}</p>
+        </li>
+      ));
+      result = (
+        <div class="workDetailBox">
+          <h3 class="comapanyNameHeader">{WORK.YUSHU.ROLE}</h3>
+          <p class="workPeriod">{WORK.YUSHU.TIME}</p>
+
+          <ul class="workDetailList">{details}</ul>
         </div>
-      </div>
-    );
-  };
+      );
+    } else if (props.info === "tab1") {
+      const details = WORK.PAY3.DETAILS.map((t) => (
+        <li class="workDetailItem">
+          <p class="workDetails">{t}</p>
+        </li>
+      ));
+      result = (
+        <div class="workDetailBox">
+          <h3 class="comapanyNameHeader">{WORK.PAY3.ROLE}</h3>
+          <p class="workPeriod">{WORK.PAY3.TIME}</p>
 
-  const SkillItem = (props) => {
-    return (
-      <li class="skillitem">
-        <img src={props.src} class="skillItemImage" width={props.width} />
-      </li>
-    );
-  };
+          <ul class="workDetailList">{details}</ul>
+        </div>
+      );
+    } else if (props.info === "tab2") {
+      const details = WORK.BASE.DETAILS.map((t) => (
+        <li class="workDetailItem">
+          <p class="workDetails">{t}</p>
+        </li>
+      ));
+      result = (
+        <div class="workDetailBox">
+          <h3 class="comapanyNameHeader">{WORK.BASE.ROLE}</h3>
+          <p class="workPeriod">{WORK.BASE.TIME}</p>
 
-  const LanguageSkills = () => {
-    return (
-      <>
-        <h3 class="skill-title"> PROGRAMMING LANGUAGES </h3>
-        <ul class="skilllist">
-          <SkillItem src="./tech-stack/javascript.svg" width="75px" />
+          <ul class="workDetailList">{details}</ul>
+        </div>
+      );
+    } else if (props.info === "tab4") {
+      const details = WORK.KUBERA.DETAILS.map((t) => (
+        <li class="workDetailItem">
+          <p class="workDetails">{t}</p>
+        </li>
+      ));
+      result = (
+        <div class="workDetailBox">
+          <h3 class="comapanyNameHeader">{WORK.KUBERA.ROLE}</h3>
+          <p class="workPeriod">{WORK.KUBERA.TIME}</p>
 
-          <SkillItem src="./tech-stack/html-5.svg" width="65px" />
-
-          <SkillItem src="./tech-stack/css-3.svg" width="65px" />
-
-          <SkillItem src="./tech-stack/python.svg" width="75px" />
-        </ul>
-      </>
-    );
-  };
-
-  const BlockchainSkills = () => {
-    return (
-      <>
-        <h3 class="skill-title"> BLOCKCHAIN </h3>
-        <ul class="skilllist">
-          <SkillItem src="./tech-stack/ethereum.svg" width="50px" />
-
-          <SkillItem src="./tech-stack/solidity.svg" width="50px" />
-
-          <SkillItem src="./tech-stack/hardhat.svg" width="150px" />
-
-          <SkillItem src="./tech-stack/ethers.svg" width="100px" />
-
-          <SkillItem src="./tech-stack/truffle.svg" width="80px" />
-
-          <SkillItem src="./tech-stack/web3js.svg" width="80px" />
-
-          <SkillItem src="./tech-stack/ganache-icon.svg" width="70px" />
-
-          <SkillItem src="./tech-stack/open-zeppelin.svg" width="160px" />
-        </ul>
-      </>
-    );
-  };
-
-  const WebDevSkills = () => {
-    return (
-      <>
-        <h3 class="skill-title"> WEB DEVELOPEMENT </h3>
-        <ul class="skilllist">
-          <SkillItem src="./tech-stack/mongodb.svg" width="150px" />
-
-          <SkillItem src="./tech-stack/express.svg" width="130px" />
-
-          <SkillItem src="./tech-stack/react.svg" width="80px" />
-
-          <SkillItem src="./tech-stack/nodejs.svg" width="100px" />
-
-          <SkillItem src="./tech-stack/nextjs.svg" width="120px" />
-        </ul>
-      </>
-    );
-  };
-
-  const SkillSection = () => {
-    return (
-      <div class="skills-header">
-        <h2 class="sectionTitle">SKILLS</h2>
-        <LanguageSkills />
-        <BlockchainSkills />
-        <WebDevSkills />
-      </div>
-    );
+          <ul class="workDetailList">{details}</ul>
+        </div>
+      );
+    } else if (props.info === "tab5") {
+      const details = WORK.DOPY.DETAILS.map((t) => (
+        <li class="workDetailItem">
+          <p class="workDetails">{t}</p>
+        </li>
+      ));
+      result = (
+        <div class="workDetailBox">
+          <h3 class="comapanyNameHeader">{WORK.DOPY.ROLE}</h3>
+          <p class="workPeriod">{WORK.DOPY.TIME}</p>
+          <ul class="workDetailList">{details}</ul>
+        </div>
+      );
+    } else {
+      result = (
+        <div>
+          <h3>Error</h3>;
+        </div>
+      );
+    }
+    return result;
   };
 
   const Projects = () => {
     return (
       <>
-        <h2 class="projectsHeader">PROJECTS</h2>
+        <h2 class="projectsHeader">My Projects</h2>
         <div class="projectCollection">
           <WebDevCard
             projectType={PROJECT7.TYPE}
@@ -380,16 +457,6 @@ function App() {
     );
   };
 
-  const BubbleGenerator = (props) => {
-    const bubbleList = props.bubbles.map((t) => (
-      <li class="bubbleListItem">
-        <button class="bubble">{t}</button>
-      </li>
-    ));
-
-    return <ul class="bubbleList">{bubbleList}</ul>;
-  };
-
   const ArticleCard = (props) => {
     return (
       <div class="articleCard">
@@ -430,101 +497,94 @@ function App() {
       </div>
     );
   };
+  const BubbleGenerator = (props) => {
+    const bubbleList = props.bubbles.map((t) => (
+      <li class="bubbleListItem">
+        <button class="bubble">{t}</button>
+      </li>
+    ));
 
-  const GetWorkDetails = (props) => {
-    let result;
-    if (props.info === "tab1") {
-      result = (
-        <div class="workDetailBox">
-          <h3 class="comapanyNameHeader">Blockchain Developer at Pay3</h3>
-          <p class="workPeriod">January - June 2017</p>
-          <ul class="workDetailList">
-            <li class="workDetailItem">
-              <p class="workDetails">My name is Chirag Agarwal</p>
-            </li>
-            <li class="workDetailItem">
-              <p class="workDetails">I am a Blockchain Developer</p>
-            </li>
-          </ul>
-        </div>
-      );
-    } else if (props.info === "tab2") {
-      result = (
-        <div class="workDetailBox">
-          <h3 class="comapanyNameHeader">Blockchain Developer at Yushu</h3>
-          <p class="workPeriod">January - June 2018</p>
-          <ul class="workDetailList">
-            <li class="workDetailItem">
-              <p class="workDetails">My name is Chirag Agarwal.....</p>
-            </li>
-            <li class="workDetailItem">
-              <p class="workDetails">I am a Blockchain Developer.....</p>
-            </li>
-          </ul>
-        </div>
-      );
-    }
-    return result;
+    return <ul class="bubbleList">{bubbleList}</ul>;
   };
 
-  const Experience = () => {
-    return <></>;
-  };
-
-  const Contact = (props) => {
+  const SkillSection = () => {
     return (
-      <>
-        <div class="contactDiv">
-          <div class="imageDiv">
-            <img
-              src="./contact.jpg"
-              width="400px"
-              data-aos="zoom-in"
-              data-aos-delay="100"
-              data-aos-duration="1000"
-            />
-          </div>
-          <div class="formDiv">
-            <div>
-              <h2>Lets chat!</h2>
-            </div>
-            <div class="formBox">
-              <form>
-                <div class="inputField">
-                  <input
-                    type="text"
-                    class="form-control-1"
-                    id="inputName"
-                    placeholder="Your Name"
-                  />
-                  <input
-                    type="email"
-                    class="form-control-1"
-                    id="exampleInputEmail"
-                    aria-describedby="emailHelp"
-                    placeholder="Email address"
-                  />
-                  <input
-                    type="text"
-                    class="form-control-1"
-                    id="subject"
-                    placeholder="Subject"
-                  />
-                  <input
-                    type="text"
-                    class="form-control-1 message"
-                    id="message"
-                    placeholder="Write your message"
-                  />
-                </div>
-                <button type="submit" class="btn btn-dark">
-                  Submit
-                </button>
-              </form>
-            </div>
-          </div>
+      <div class="skills-header">
+        <h2 class="sectionTitle">SKILLS</h2>
+        <div class="skillsBox" data-aos="zoom-up" data-aos-duration="5000">
+          <LanguageSkills />
+          <BlockchainSkills />
+          <WebDevSkills />
         </div>
-      </>
+      </div>
+    );
+  };
+
+  const LanguageSkills = () => {
+    return (
+      <div id="languageSkillSection">
+        <h3 class="skill-title"> PROGRAMMING LANGUAGES </h3>
+        <ul class="skilllist">
+          <SkillItem src="./tech-stack/javascript.svg" width="75px" />
+
+          <SkillItem src="./tech-stack/html-5.svg" width="65px" />
+
+          <SkillItem src="./tech-stack/css-3.svg" width="65px" />
+
+          <SkillItem src="./tech-stack/python.svg" width="75px" />
+        </ul>
+      </div>
+    );
+  };
+
+  const BlockchainSkills = () => {
+    return (
+      <div id="blockchainSkillSection">
+        <h3 class="skill-title"> BLOCKCHAIN </h3>
+        <ul class="skilllist">
+          <SkillItem src="./tech-stack/ethereum.svg" width="50px" />
+
+          <SkillItem src="./tech-stack/solidity.svg" width="50px" />
+
+          <SkillItem src="./tech-stack/hardhat.svg" width="150px" />
+
+          <SkillItem src="./tech-stack/ethers.svg" width="100px" />
+
+          <SkillItem src="./tech-stack/truffle.svg" width="80px" />
+
+          <SkillItem src="./tech-stack/web3js.svg" width="80px" />
+
+          <SkillItem src="./tech-stack/ganache-icon.svg" width="70px" />
+
+          <SkillItem src="./tech-stack/open-zeppelin.svg" width="160px" />
+        </ul>
+      </div>
+    );
+  };
+
+  const WebDevSkills = () => {
+    return (
+      <div id="webDevSkillSection">
+        <h3 class="skill-title"> WEB DEVELOPEMENT </h3>
+        <ul class="skilllist">
+          <SkillItem src="./tech-stack/mongodb.svg" width="150px" />
+
+          <SkillItem src="./tech-stack/express.svg" width="130px" />
+
+          <SkillItem src="./tech-stack/react.svg" width="80px" />
+
+          <SkillItem src="./tech-stack/nodejs.svg" width="100px" />
+
+          <SkillItem src="./tech-stack/nextjs.svg" width="120px" />
+        </ul>
+      </div>
+    );
+  };
+  const SkillItem = (props) => {
+    return (
+      <li class="skillitem">
+        <img src={props.src} class="skillItemImage" width={props.width} />
+      </li>
     );
   };
 
@@ -574,10 +634,6 @@ function App() {
         <About />
       </section>
 
-      <section id="skills" class="skills">
-        <SkillSection />
-      </section>
-
       <section id="experience" class="experience">
         <Experience />
       </section>
@@ -585,9 +641,8 @@ function App() {
       <section id="projects" class="projects">
         <Projects />
       </section>
-
-      <section id="contact" class="contact">
-        <Contact />
+      <section id="skills" class="skills">
+        <SkillSection />
       </section>
 
       <Footer
