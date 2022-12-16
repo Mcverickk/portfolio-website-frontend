@@ -40,7 +40,7 @@ a:hover {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .nav-menu {
   padding: 0;
@@ -127,7 +127,7 @@ a:hover {
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
   position: fixed;
@@ -207,7 +207,7 @@ a:hover {
 }
 
 #hero .dp {
-  padding-left: 100px;
+  padding-left: 150px;
   padding-right: 100px;
 }
 
@@ -298,7 +298,8 @@ a:hover {
 }
 
 .about-title {
-  padding: 10px 30px;
+  margin: 10px 0px;
+  margin-bottom: 30px;
   margin-top: 100px;
   font-size: 40px;
   font-family: "Unbounded", cursive;
@@ -325,11 +326,12 @@ a:hover {
   text-align: center;
   font-size: 40px;
   font-family: "Unbounded", cursive;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 .companyBox {
+  display: flex;
   justify-content: center;
-  padding-left: 100px;
+  flex-wrap: wrap;
 }
 
 .workDetailBox {

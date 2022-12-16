@@ -248,8 +248,8 @@ function App() {
       <div class="experienceBox">
         <h2 class="experience-title">WORK EXPERIENCE</h2>
         <Tab.Container id="left-tabs-example" defaultActiveKey="tab1">
-          <Row className="companyBox">
-            <Col sm={2} className="leftCol">
+          <div className="companyBox">
+            <Col sm={4} className="leftCol">
               <Nav
                 id="experience"
                 variant="pills"
@@ -305,7 +305,7 @@ function App() {
                 </Tab.Pane>
               </Tab.Content>
             </Col>
-          </Row>
+          </div>
         </Tab.Container>
       </div>
     );
@@ -641,6 +641,7 @@ function App() {
       <section id="projects" class="projects">
         <Projects />
       </section>
+
       <section id="skills" class="skills">
         <SkillSection />
       </section>
