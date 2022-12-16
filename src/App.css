@@ -179,7 +179,7 @@ a:hover {
   height: 100vh;
   background-size: cover;
   position: relative;
-  background-image: url(../public/bg.jpeg);
+  background-image: url(../public/cover.webp);
   padding-bottom: 150px;
 }
 
@@ -309,7 +309,7 @@ a:hover {
 
 .about {
   color: #1d364f;
-  background-image: url(../public/bg5.png);
+  background-image: url(../public/about-background.webp);
   padding-bottom: 70px;
   padding-top: 100px;
 }
