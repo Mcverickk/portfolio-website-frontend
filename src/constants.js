@@ -9,7 +9,7 @@ const PHONE = "+91 8777859648";
 const LOCATION = "India";
 
 const BIO =
-  "I am a blockchain enthusiast exploring the financial and development side of Web3. As a Blockchain Developer, I have worked on various personal and professional projects. I have worked on projects relating to Web3 payment systems, NFTs, DeFi, zkSNARKs, and oracles. I love traveling & have a passion for photography, cricket, F1, and graphic designing.";
+  "I am a final-year engineering student at BITS Pilani Goa. I am fascinated by blockchain technology and have been exploring the financial and tech side of it. As a Blockchain Developer, I have worked on various personal and professional projects. I have worked on projects relating to Web3 payment systems, NFTs, DeFi, zkSNARKs, and oracles. I love mountains & have a passion for travelling, photography, cricket, simulator racing, and graphic designing.";
 
 const PROJECT1 = {
   TYPE: "BLOCKCHAIN",
