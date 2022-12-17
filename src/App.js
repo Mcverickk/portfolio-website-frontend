@@ -703,20 +703,6 @@ function App() {
             </div>
           </div>
         </section>
-
-        <div className="backgroundColor">
-          <section id="about" class="about">
-            <About />
-          </section>
-        </div>
-        <Footer
-          name={NAME}
-          instagram={INSTAGRAM}
-          github={GITHUB}
-          twitter={TWITTER}
-          linkedin={LINKEDIN}
-          medium={MEDIUM}
-        />
       </div>
     );
   };

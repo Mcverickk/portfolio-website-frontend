@@ -727,7 +727,7 @@ a:hover {
   }
 
   #heroMobile .centerPiece {
-    padding: 100px;
+    padding: 10vw;
     padding-top: 130px;
     display: flex;
     flex-direction: column;
@@ -743,7 +743,7 @@ a:hover {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 2px;
-    font-size: 6vw;
+    font-size: 7vw;
     color: #1d364f;
     font-family: "Jeko", sans-serif;
     font-weight: 900;
@@ -751,7 +751,7 @@ a:hover {
 
   #heroMobile .typo {
     display: flex;
-    font-size: 3vw;
+    font-size: 4vw;
     font-family: "Jeko", sans-serif;
     color: #1d364f;
     font-weight: 500;
@@ -765,17 +765,17 @@ a:hover {
   }
 
   #heroMobile .social-links {
-    margin-top: 5px;
+    margin-top: 6px;
     display: flex;
     justify-content: center;
   }
 
   #heroMobile .social-links a {
-    font-size: 2.8;
+    font-size: 5vw;
 
     color: #1d364f;
 
-    padding: 0px 10px;
+    padding: 0px 15px;
     transition: 0.3s;
   }
 
@@ -790,11 +790,11 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: baseline;
-    font-size: 2.46vw;
+    font-size: 4vw;
   }
 
   .contactDetails {
-    font-size: 2vw;
+    font-size: 3vw;
     padding: 0px 10px;
     color: #1d364f;
     text-decoration: none;
@@ -814,7 +814,7 @@ a:hover {
     padding: 10px 0px;
     text-align: center;
     font-family: "Jeko", sans-serif;
-    font-size: 2.4vw;
+    font-size: 3vw;
 
     border-radius: 40px;
     background-color: transparent;
@@ -837,93 +837,5 @@ a:hover {
 
   #heroMobile .downloadResume:hover {
     box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.3);
-  }
-
-  /*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
-
-  .about {
-    color: #1d364f;
-    background-image: url(../public/about-background.webp);
-    padding-bottom: 70px;
-    padding-top: 100px;
-  }
-
-  .section-about {
-    text-align: center;
-    justify-content: center;
-  }
-
-  .about-title {
-    padding: 10px 0px;
-    margin-bottom: 10px;
-    padding-top: 80px;
-    font-size: 4vw;
-    font-family: "Jeko", sans-serif;
-    font-weight: 800;
-    color: #1d364f;
-  }
-  .bio {
-    color: #1d364f;
-    font-family: "Jeko", sans-serif;
-    font-weight: 500;
-    font-size: 2vw;
-    padding: 20px 100px;
-  }
-
-  .line {
-    align-items: center;
-
-    width: 30vw;
-    padding-bottom: 10px;
-    padding-top: 10px;
-  }
-
-  /*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-  #Footer {
-    background: #000000;
-    color: #e2f5ff;
-    font-size: 2vw;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
-  }
-  #Footer h3 {
-    font-size: 3vw;
-    text-align: center;
-    padding: 0;
-    font-family: "Jeko", sans-serif;
-    font-weight: 500;
-  }
-
-  #Footer .social-links a {
-    font-size: 2.2vw;
-    display: inline-block;
-
-    color: #e2f5ff;
-    line-height: 1;
-    padding: 8px 0;
-    margin: 0px 4px;
-    border-radius: 50%;
-    text-align: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-    transition: 0.2s;
-  }
-
-  #Footer p {
-    padding-top: 7px;
-    font-family: "Jeko", sans-serif;
-    font-weight: 300;
-  }
-
-  #Footer .social-links a:hover {
-    color: #008793;
-
-    text-decoration: none;
   }
 }
