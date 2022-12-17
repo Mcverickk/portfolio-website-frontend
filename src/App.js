@@ -91,7 +91,7 @@ function App() {
             <img class="dpimage" src={props.dp} width="150px" />
 
             <div>
-              <a href="../ChiragAgarwal_Resume_v2.pdf" download>
+              <a href="./custom/ChiragAgarwal_Resume_v2.pdf" download>
                 <button className="downloadResume">
                   Resume <i class="bi downloadIcon bi-download"></i>
                 </button>
@@ -564,7 +564,7 @@ function App() {
       <section id="hero" class="d-flex flex-column justify-content-center">
         <CenterInfo
           name={NAME}
-          dp="./dp.jpg"
+          dp="./custom/dp.jpg"
           instagram={INSTAGRAM}
           github={GITHUB}
           twitter={TWITTER}
