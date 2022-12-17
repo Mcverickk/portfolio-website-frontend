@@ -203,12 +203,13 @@ a:hover {
 
   #hero .centerinfo {
     display: flex;
+    justify-content: center;
     margin: 100px;
     margin-top: 150px;
   }
 
   #hero .dp {
-    padding-left: 150px;
+    padding-left: 100px;
     padding-right: 100px;
   }
 
@@ -239,14 +240,7 @@ a:hover {
     padding: 7px 25px;
     font-family: "Jeko", sans-serif;
     background-color: #e3f5fd;
-
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-
-    /* border: rgba(255, 255, 255, 0) solid;
-  border-width: 15px;
-  border-image: linear-gradient(to bottom, #1d364f, #459cc4) 1;
-  border-radius: 30px; */
-    /* color: #ceebfa; */
     border-radius: 30px;
     border-width: 0px;
   }
@@ -262,7 +256,7 @@ a:hover {
   #hero p {
     margin: 15px 0 0 0;
     font-size: 20px;
-    /* font-family: "Poppins", sans-serif; */
+
     font-family: "Jeko", sans-serif;
     color: #1d364f;
     font-weight: 500;

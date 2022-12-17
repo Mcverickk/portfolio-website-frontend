@@ -76,94 +76,92 @@ function App() {
 
   const CenterInfo = (props) => {
     return (
-      <div class="container">
+      <div
+        class="centerinfo"
+        data-aos="zoom-in"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+      >
         <div
-          class="centerinfo"
-          data-aos="zoom-in"
+          class="dp"
+          data-aos="fade-left"
           data-aos-delay="100"
           data-aos-duration="1000"
         >
-          <div
-            class="dp"
-            data-aos="fade-left"
-            data-aos-delay="100"
-            data-aos-duration="1000"
-          >
-            <img class="dpimage" src={props.dp} width="150px" />
+          <img class="dpimage" src={props.dp} width="150px" />
 
-            <div>
-              <a href="./custom/ChiragAgarwal_Resume_v2.pdf" download>
-                <button className="downloadResume">
-                  Resume <i class="bi downloadIcon bi-download"></i>
-                </button>
-              </a>
-            </div>
+          <div>
+            <a href="./custom/ChiragAgarwal_Resume_v2.pdf" download>
+              <button className="downloadResume">
+                Resume <i class="bi downloadIcon bi-download"></i>
+              </button>
+            </a>
           </div>
+        </div>
 
-          <div data-aos="fade-right" data-aos-delay="100">
-            <h1>{props.name}</h1>
-            <p>
-              I'm a
-              <TypeAnimation
-                // Same String at the start will only be typed once, initially
-                sequence={[
-                  1200,
-                  " Blockchain Developer",
-                  1000,
-                  " Full-stack Web Developer",
-                  1000,
-                  " Photographer",
-                  1000,
-                  " Traveller",
-                  1000,
-                  " #buidler",
-                ]}
-                speed={40} // Custom Speed from 1-99 - Default Speed: 40
-                style={{ fontSize: "1em" }}
-                wrapper="span" // Animation will be rendered as a <span>
-                repeat={Infinity} // Repeat this Animation Sequence infinitely
-              />
-              <span
-                class="typed"
-                data-typed-items="Designer, Developer, Freelancer, Photographer"
-              ></span>
-            </p>
-            <div class="social-links">
-              <a href={props.linkedin} class="linkedin">
-                <i class="bi bi-linkedin"></i>
-              </a>
-              <a href={props.github} class="github">
-                <i class="bi bi-github"></i>
-              </a>
-              <a href={props.twitter} class="twitter">
-                <i class="bi bi-twitter"></i>
-              </a>
-              <a href={props.instagram} class="instagram">
-                <i class="bi bi-instagram"></i>
-              </a>
-              <a href={props.medium} class="medium">
-                <i class="bi bi-medium"></i>
+        <div data-aos="fade-right" data-aos-delay="100">
+          <h1>{props.name}</h1>
+          <p>
+            I'm a
+            <TypeAnimation
+              // Same String at the start will only be typed once, initially
+              sequence={[
+                1200,
+                " Blockchain Developer",
+                1000,
+                " Full-stack Web Developer",
+                1000,
+                " Photographer",
+                1000,
+                " Traveller",
+                1000,
+                " #buidler",
+              ]}
+              speed={40} // Custom Speed from 1-99 - Default Speed: 40
+              style={{ fontSize: "1em" }}
+              wrapper="span" // Animation will be rendered as a <span>
+              repeat={Infinity} // Repeat this Animation Sequence infinitely
+            />
+            <span
+              class="typed"
+              data-typed-items="Designer, Developer, Freelancer, Photographer"
+            ></span>
+          </p>
+          <div class="social-links">
+            <a href={props.linkedin} class="linkedin">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href={props.github} class="github">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href={props.twitter} class="twitter">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href={props.instagram} class="instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href={props.medium} class="medium">
+              <i class="bi bi-medium"></i>
+            </a>
+          </div>
+          <div class="contactInfo">
+            <div class="contactInfoRow">
+              <i class="bi bi-envelope-at-fill"></i>
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=chiragagarwal2001@gmail.com"
+                target="_blank"
+                class="contactArea"
+              >
+                <h6 class="contactDetails">{EMAIL}</h6>
               </a>
             </div>
-            <div class="contactInfo">
-              <div class="contactInfoRow">
-                <i class="bi bi-envelope-at-fill"></i>
-                <a
-                  href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=chiragagarwal2001@gmail.com"
-                  target="_blank"
-                  class="contactArea"
-                >
-                  <h6 class="contactDetails">{EMAIL}</h6>
-                </a>
-              </div>
-              <div class="contactInfoRow">
-                <i class="bi bi-telephone-fill"></i>
-                <h6 class="contactDetails">{PHONE}</h6>
-              </div>
-              <div class="contactInfoRow">
-                <i class="bi bi-geo-alt-fill"></i>
-                <h6 class="contactDetails">{LOCATION}</h6>
-              </div>
+            <div class="contactInfoRow">
+              <i class="bi bi-telephone-fill"></i>
+              <h6 class="contactDetails">{PHONE}</h6>
+            </div>
+            <div class="contactInfoRow">
+              <i class="bi bi-geo-alt-fill"></i>
+              <h6 class="contactDetails">{LOCATION}</h6>
             </div>
           </div>
         </div>
