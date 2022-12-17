@@ -22,7 +22,7 @@ const PROJECT1 = {
 
 const PROJECT2 = {
   TYPE: "BLOCKCHAIN",
-  TITLE: "Mr.Gadget NFTs",
+  TITLE: "Mr.Gadget",
   DETAILS:
     "Mr.Gadget is a collection of 241 uniquely generated NFTs on Polygon. IPFS is used to store NFT's metadata & React.js was used to build the frontend.",
   LINK: "https://mrgadget.netlify.app/",
@@ -69,15 +69,17 @@ const PROJECT7 = {
   TYPE: "WEB DEVELOPMENT",
   TITLE: "Porfolio Website",
   DETAILS: "Created this portfolio website using React.js, Bootstrap & CSS.",
-  LINK: "",
+  LINK: "chiragagarwal.xyz",
   TAGS: ["React.js", "Bootstrap", "Designing", "HTML", "CSS"],
 };
 
 const PROJECT8 = {
-  TYPE: "",
-  TITLE: "",
-  DETAILS: "",
-  LINK: "",
+  TYPE: "BLOCKCHAIN",
+  TITLE: "Warranty NFTs",
+  DETAILS:
+    "Built an NFT project for warranty cards, where the NFT decays automatically after the warrant period is over. The warrant card also can be soulbound to prevent transfer of item ownership. The smart contract was written in Solidity & Next.js was used to build the website.",
+  LINK: "https://github.com/Mcverickk/Decaying-Warranty-NFT-ethereum.git",
+  TAGS: ["React.js", "Solidity", "Next.js", "NFT"],
 };
 
 const WORK = {

@@ -392,6 +392,14 @@ function App() {
             projectIcon={mediumIcon}
             tags={PROJECT6.TAGS}
           />
+          <BlockchainCard
+            projectType={PROJECT8.TYPE}
+            projectTitle={PROJECT8.TITLE}
+            projectDetails={PROJECT8.DETAILS}
+            projectLink={PROJECT8.LINK}
+            projectIcon={githubIcon}
+            tags={PROJECT8.TAGS}
+          />
         </div>
       </>
     );
