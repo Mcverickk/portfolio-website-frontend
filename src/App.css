@@ -419,10 +419,10 @@ a:hover {
   } */
 
   /* Add a color to the active/current link */
-  /* #experience .nav-link.active {
+  #experience .nav-link.active {
     border-color: #1d364f;
     background-color: transparent;
-  } */
+  }
 
   /* #experience .nav-link {
     border-right: #ffffff solid;
