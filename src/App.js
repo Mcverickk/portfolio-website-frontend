@@ -1,5 +1,4 @@
 import "./App.css";
-import { useState, useEffect } from "react";
 import { TypeAnimation } from "react-type-animation";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -23,6 +22,8 @@ import {
   EMAIL,
   PHONE,
   LOCATION,
+  TYPOGRAPHY,
+  RESUME_FILENAME,
 } from "./constants";
 import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
@@ -91,7 +92,7 @@ function App() {
           <img class="dpimage" src={props.dp} width="150px" />
 
           <div>
-            <a href="./custom/ChiragAgarwal_Resume_v2.pdf" download>
+            <a href={`./custom/${RESUME_FILENAME}`} download>
               <button className="downloadResume">
                 Resume <i class="bi downloadIcon bi-download"></i>
               </button>
@@ -105,18 +106,7 @@ function App() {
             I'm a
             <TypeAnimation
               // Same String at the start will only be typed once, initially
-              sequence={[
-                1200,
-                " Blockchain Developer",
-                1000,
-                " Full-stack Web Developer",
-                1000,
-                " Photographer",
-                1000,
-                " Traveller",
-                1000,
-                " #buidler",
-              ]}
+              sequence={TYPOGRAPHY}
               speed={40} // Custom Speed from 1-99 - Default Speed: 40
               style={{ fontSize: "1em" }}
               wrapper="span" // Animation will be rendered as a <span>
@@ -148,7 +138,7 @@ function App() {
             <div class="contactInfoRow">
               <i class="bi bi-envelope-at-fill"></i>
               <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=chiragagarwal2001@gmail.com"
+                href={`https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${EMAIL}`}
                 target="_blank"
                 class="contactArea"
               >
@@ -201,27 +191,27 @@ function App() {
                     class="active"
                     className="companyLinkTab1"
                   >
-                    Pay3
+                    {WORK.TWO.COMPANY}
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item className="companyItemTab2">
                   <Nav.Link eventKey="tab2" className="companyLinkTab2">
-                    Base Protocol
+                    {WORK.THREE.COMPANY}
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item className="companyItemTab2">
                   <Nav.Link eventKey="tab3" className="companyLinkTab2">
-                    Yushu Excellence
+                    {WORK.ONE.COMPANY}
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item className="companyItemTab2">
                   <Nav.Link eventKey="tab4" className="companyLinkTab2">
-                    Kubera Capital
+                    {WORK.FOUR.COMPANY}
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item className="companyItemTab2">
                   <Nav.Link eventKey="tab5" className="companyLinkTab2">
-                    The Department of Photography
+                    {WORK.FIVE.COMPANY}
                   </Nav.Link>
                 </Nav.Item>
               </Nav>
@@ -254,71 +244,71 @@ function App() {
   const GetWorkDetails = (props) => {
     let result;
     if (props.info === "tab3") {
-      const details = WORK.YUSHU.DETAILS.map((t) => (
+      const details = WORK.ONE.DETAILS.map((t) => (
         <li class="workDetailItem">
           <p class="workDetails">{t}</p>
         </li>
       ));
       result = (
         <div class="workDetailBox">
-          <h3 class="comapanyNameHeader">{WORK.YUSHU.ROLE}</h3>
-          <p class="workPeriod">{WORK.YUSHU.TIME}</p>
+          <h3 class="comapanyNameHeader">{WORK.ONE.ROLE}</h3>
+          <p class="workPeriod">{WORK.ONE.TIME}</p>
 
           <ul class="workDetailList">{details}</ul>
         </div>
       );
     } else if (props.info === "tab1") {
-      const details = WORK.PAY3.DETAILS.map((t) => (
+      const details = WORK.TWO.DETAILS.map((t) => (
         <li class="workDetailItem">
           <p class="workDetails">{t}</p>
         </li>
       ));
       result = (
         <div class="workDetailBox">
-          <h3 class="comapanyNameHeader">{WORK.PAY3.ROLE}</h3>
-          <p class="workPeriod">{WORK.PAY3.TIME}</p>
+          <h3 class="comapanyNameHeader">{WORK.TWO.ROLE}</h3>
+          <p class="workPeriod">{WORK.TWO.TIME}</p>
 
           <ul class="workDetailList">{details}</ul>
         </div>
       );
     } else if (props.info === "tab2") {
-      const details = WORK.BASE.DETAILS.map((t) => (
+      const details = WORK.THREE.DETAILS.map((t) => (
         <li class="workDetailItem">
           <p class="workDetails">{t}</p>
         </li>
       ));
       result = (
         <div class="workDetailBox">
-          <h3 class="comapanyNameHeader">{WORK.BASE.ROLE}</h3>
-          <p class="workPeriod">{WORK.BASE.TIME}</p>
+          <h3 class="comapanyNameHeader">{WORK.THREE.ROLE}</h3>
+          <p class="workPeriod">{WORK.THREE.TIME}</p>
 
           <ul class="workDetailList">{details}</ul>
         </div>
       );
     } else if (props.info === "tab4") {
-      const details = WORK.KUBERA.DETAILS.map((t) => (
+      const details = WORK.FOUR.DETAILS.map((t) => (
         <li class="workDetailItem">
           <p class="workDetails">{t}</p>
         </li>
       ));
       result = (
         <div class="workDetailBox">
-          <h3 class="comapanyNameHeader">{WORK.KUBERA.ROLE}</h3>
-          <p class="workPeriod">{WORK.KUBERA.TIME}</p>
+          <h3 class="comapanyNameHeader">{WORK.FOUR.ROLE}</h3>
+          <p class="workPeriod">{WORK.FOUR.TIME}</p>
 
           <ul class="workDetailList">{details}</ul>
         </div>
       );
     } else if (props.info === "tab5") {
-      const details = WORK.DOPY.DETAILS.map((t) => (
+      const details = WORK.FIVE.DETAILS.map((t) => (
         <li class="workDetailItem">
           <p class="workDetails">{t}</p>
         </li>
       ));
       result = (
         <div class="workDetailBox">
-          <h3 class="comapanyNameHeader">{WORK.DOPY.ROLE}</h3>
-          <p class="workPeriod">{WORK.DOPY.TIME}</p>
+          <h3 class="comapanyNameHeader">{WORK.FIVE.ROLE}</h3>
+          <p class="workPeriod">{WORK.FIVE.TIME}</p>
           <ul class="workDetailList">{details}</ul>
         </div>
       );

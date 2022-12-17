@@ -7,6 +7,20 @@ const MEDIUM = "https://medium.com/@Mcverick";
 const EMAIL = "chiragagarwal2001@gmail.com";
 const PHONE = "+91 8777859648";
 const LOCATION = "India";
+const RESUME_FILENAME = "ChiragAgarwal_Resume_v2.pdf";
+
+const TYPOGRAPHY = [
+  1200,
+  " Blockchain Developer",
+  1000,
+  " Full-stack Web Developer",
+  1000,
+  " Photographer",
+  1000,
+  " Traveller",
+  1000,
+  " #buidler",
+];
 
 const BIO =
   "I am a final-year engineering student at BITS Pilani Goa. I am fascinated by blockchain technology and have been exploring the financial and tech side of it. As a Blockchain Developer, I have worked on various personal and professional projects. I have worked on projects relating to Web3 payment systems, NFTs, DeFi, zkSNARKs, and oracles. I love mountains & have a passion for travelling, photography, cricket, simulator racing, and graphic designing.";
@@ -83,7 +97,8 @@ const PROJECT8 = {
 };
 
 const WORK = {
-  YUSHU: {
+  ONE: {
+    COMPANY: "Yushu Excellence",
     ROLE: "Blockchain Developer Intern",
     TIME: "SEPT 2022 - OCT 2022",
     DETAILS: [
@@ -92,7 +107,8 @@ const WORK = {
       "Created a detailed explainer on Fractional NFTs.",
     ],
   },
-  PAY3: {
+  TWO: {
+    COMPANY: "Pay3",
     ROLE: "Blockchain Developer Intern",
     TIME: "FEB 2022 - AUG 2022",
     DETAILS: [
@@ -102,7 +118,8 @@ const WORK = {
       "Worked on building a multi-wallet connect modal library, which the client can import to add multi-wallet connectivity with Metamask, Coinbase, Bitcoin, and WalletConnect to their applications.",
     ],
   },
-  BASE: {
+  THREE: {
+    COMPANY: "Base Protocol",
     ROLE: "Freelance Blockchain Developer",
     TIME: "JUL 2022",
     DETAILS: [
@@ -111,7 +128,8 @@ const WORK = {
       "Integrated swap and liquidity feature to the frontend of the protocol using React and Ethers.js.",
     ],
   },
-  KUBERA: {
+  FOUR: {
+    COMPANY: "Kubera Capital",
     ROLE: "Web3 Research Analyst",
     TIME: "NOV 2021 - FEB 2022",
     DETAILS: [
@@ -120,7 +138,8 @@ const WORK = {
       "Researched on few projects on Polkadot & Kusama.",
     ],
   },
-  DOPY: {
+  FIVE: {
+    COMPANY: "The Department of Photography",
     ROLE: "Head of Photography",
     TIME: "JUL 2021 - JUN 2022",
     DETAILS: [
@@ -151,4 +170,6 @@ export {
   EMAIL,
   PHONE,
   LOCATION,
+  RESUME_FILENAME,
+  TYPOGRAPHY,
 };
