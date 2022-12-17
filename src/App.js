@@ -128,19 +128,19 @@ function App() {
             ></span>
           </p>
           <div class="social-links">
-            <a href={props.linkedin} class="linkedin">
+            <a href={props.linkedin} class="linkedin" target="_blank">
               <i class="bi bi-linkedin"></i>
             </a>
-            <a href={props.github} class="github">
+            <a href={props.github} class="github" target="_blank">
               <i class="bi bi-github"></i>
             </a>
-            <a href={props.twitter} class="twitter">
+            <a href={props.twitter} class="twitter" target="_blank">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href={props.instagram} class="instagram">
+            <a href={props.instagram} class="instagram" target="_blank">
               <i class="bi bi-instagram"></i>
             </a>
-            <a href={props.medium} class="medium">
+            <a href={props.medium} class="medium" target="_blank">
               <i class="bi bi-medium"></i>
             </a>
           </div>
@@ -411,7 +411,9 @@ function App() {
         <h5 class="projectArticle">{props.projectType}</h5>
         <div class="projectHeader">
           <h3 class="projectTitle">{props.projectTitle}</h3>
-          <a href={props.projectLink}>{props.projectIcon}</a>
+          <a href={props.projectLink} target="_blank">
+            {props.projectIcon}
+          </a>
         </div>
         <p class="projectDetails">{props.projectDetails}</p>
 
@@ -425,7 +427,9 @@ function App() {
         <h5 class="projectBlockchain">{props.projectType}</h5>
         <div class="projectHeader">
           <h3 class="projectTitle">{props.projectTitle}</h3>
-          <a href={props.projectLink}>{props.projectIcon}</a>
+          <a href={props.projectLink} target="_blank">
+            {props.projectIcon}
+          </a>
         </div>
         <p class="projectDetails">{props.projectDetails}</p>
         <BubbleGenerator bubbles={props.tags} />
@@ -438,7 +442,9 @@ function App() {
         <h5 class="projectWebDev">{props.projectType}</h5>
         <div class="projectHeader">
           <h3 class="projectTitle">{props.projectTitle}</h3>
-          <a href={props.projectLink}>{props.projectIcon}</a>
+          <a href={props.projectLink} target="_blank">
+            {props.projectIcon}
+          </a>
         </div>
         <p class="projectDetails">{props.projectDetails}</p>
         <BubbleGenerator bubbles={props.tags} />
@@ -473,15 +479,35 @@ function App() {
       <div id="languageSkillSection">
         <h3 class="skill-title"> PROGRAMMING LANGUAGES </h3>
         <ul class="skilllist">
-          <SkillItem src="./tech-stack/javascript.svg" width="75px" />
+          <SkillItem
+            src="./tech-stack/javascript.svg"
+            width="75px"
+            titleName="Javascript"
+          />
 
-          <SkillItem src="./tech-stack/cplusplus.svg" width="75px" />
+          <SkillItem
+            src="./tech-stack/cplusplus.svg"
+            width="75px"
+            titleName="C++"
+          />
 
-          <SkillItem src="./tech-stack/html-5.svg" width="65px" />
+          <SkillItem
+            src="./tech-stack/html-5.svg"
+            width="65px"
+            titleName="HTML"
+          />
 
-          <SkillItem src="./tech-stack/css-3.svg" width="65px" />
+          <SkillItem
+            src="./tech-stack/css-3.svg"
+            width="65px"
+            titleName="CSS"
+          />
 
-          <SkillItem src="./tech-stack/python.svg" width="75px" />
+          <SkillItem
+            src="./tech-stack/python.svg"
+            width="75px"
+            titleName="Python"
+          />
         </ul>
       </div>
     );
@@ -492,21 +518,53 @@ function App() {
       <div id="blockchainSkillSection">
         <h3 class="skill-title"> BLOCKCHAIN </h3>
         <ul class="skilllist">
-          <SkillItem src="./tech-stack/ethereum.svg" width="50px" />
+          <SkillItem
+            src="./tech-stack/ethereum.svg"
+            width="50px"
+            titleName="Ethereum"
+          />
 
-          <SkillItem src="./tech-stack/solidity.svg" width="50px" />
+          <SkillItem
+            src="./tech-stack/solidity.svg"
+            width="50px"
+            titleName="Solidity"
+          />
 
-          <SkillItem src="./tech-stack/hardhat.svg" width="150px" />
+          <SkillItem
+            src="./tech-stack/hardhat.svg"
+            width="150px"
+            titleName="Hardhat"
+          />
 
-          <SkillItem src="./tech-stack/ethers.svg" width="100px" />
+          <SkillItem
+            src="./tech-stack/ethers.svg"
+            width="100px"
+            titleName="Ethers.js"
+          />
 
-          <SkillItem src="./tech-stack/truffle.svg" width="80px" />
+          <SkillItem
+            src="./tech-stack/truffle.svg"
+            width="80px"
+            titleName="Truffle"
+          />
 
-          <SkillItem src="./tech-stack/web3js.svg" width="80px" />
+          <SkillItem
+            src="./tech-stack/web3js.svg"
+            width="80px"
+            titleName="Web3.js"
+          />
 
-          <SkillItem src="./tech-stack/ganache-icon.svg" width="70px" />
+          <SkillItem
+            src="./tech-stack/ganache-icon.svg"
+            width="70px"
+            titleName="Ganache"
+          />
 
-          <SkillItem src="./tech-stack/open-zeppelin.svg" width="160px" />
+          <SkillItem
+            src="./tech-stack/open-zeppelin.svg"
+            width="160px"
+            titleName="Open Zeppelin"
+          />
         </ul>
       </div>
     );
@@ -517,22 +575,42 @@ function App() {
       <div id="webDevSkillSection">
         <h3 class="skill-title"> WEB DEVELOPEMENT </h3>
         <ul class="skilllist">
-          <SkillItem src="./tech-stack/mongodb.svg" width="150px" />
+          <SkillItem
+            src="./tech-stack/mongodb.svg"
+            width="150px"
+            titleName="MongoDB"
+          />
 
-          <SkillItem src="./tech-stack/express.svg" width="130px" />
+          <SkillItem
+            src="./tech-stack/express.svg"
+            width="130px"
+            titleName="Express"
+          />
 
-          <SkillItem src="./tech-stack/react.svg" width="80px" />
+          <SkillItem
+            src="./tech-stack/react.svg"
+            width="80px"
+            titleName="React.js"
+          />
 
-          <SkillItem src="./tech-stack/nodejs.svg" width="100px" />
+          <SkillItem
+            src="./tech-stack/nodejs.svg"
+            width="100px"
+            titleName="Node.js"
+          />
 
-          <SkillItem src="./tech-stack/nextjs.svg" width="120px" />
+          <SkillItem
+            src="./tech-stack/nextjs.svg"
+            width="120px"
+            titleName="Next.js"
+          />
         </ul>
       </div>
     );
   };
   const SkillItem = (props) => {
     return (
-      <li class="skillitem">
+      <li class="skillitem" title={props.titleName}>
         <img src={props.src} class="skillItemImage" width={props.width} />
       </li>
     );
@@ -543,19 +621,19 @@ function App() {
       <footer id="Footer">
         <h3>{props.name}</h3>
         <div class="social-links">
-          <a href={props.twitter} class="twitter">
+          <a href={props.twitter} class="twitter" target="_blank">
             <i class="bi bi-twitter"></i>
           </a>
-          <a href={props.linkedin} class="linkedin">
+          <a href={props.linkedin} class="linkedin" target="_blank">
             <i class="bi bi-linkedin"></i>
           </a>
-          <a href={props.github} class="github">
+          <a href={props.github} class="github" target="_blank">
             <i class="bi bi-github"></i>
           </a>
-          <a href={props.medium} class="medium">
+          <a href={props.medium} class="medium" target="_blank">
             <i class="bi bi-medium"></i>
           </a>
-          <a href={props.instagram} class="instagram">
+          <a href={props.instagram} class="instagram" target="_blank">
             <i class="bi bi-instagram"></i>
           </a>
         </div>
@@ -650,19 +728,19 @@ function App() {
               </p>
             </div>
             <div class="social-links">
-              <a href={LINKEDIN} class="linkedin">
+              <a href={LINKEDIN} class="linkedin" target="_blank">
                 <i class="bi bi-linkedin"></i>
               </a>
-              <a href={GITHUB} class="github">
+              <a href={GITHUB} class="github" target="_blank">
                 <i class="bi bi-github"></i>
               </a>
-              <a href={TWITTER} class="twitter">
+              <a href={TWITTER} class="twitter" target="_blank">
                 <i class="bi bi-twitter"></i>
               </a>
-              <a href={INSTAGRAM} class="instagram">
+              <a href={INSTAGRAM} class="instagram" target="_blank">
                 <i class="bi bi-instagram"></i>
               </a>
-              <a href={MEDIUM} class="medium">
+              <a href={MEDIUM} class="medium" target="_blank">
                 <i class="bi bi-medium"></i>
               </a>
             </div>
