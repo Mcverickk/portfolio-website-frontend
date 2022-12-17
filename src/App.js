@@ -92,7 +92,9 @@ function App() {
 
             <div>
               <a href="../ChiragAgarwal_Resume_v2.pdf" download>
-                <button className="downloadResume">Download Resume</button>
+                <button className="downloadResume">
+                  Resume <i class="bi downloadIcon bi-download"></i>
+                </button>
               </a>
             </div>
           </div>
@@ -465,6 +467,8 @@ function App() {
         <h3 class="skill-title"> PROGRAMMING LANGUAGES </h3>
         <ul class="skilllist">
           <SkillItem src="./tech-stack/javascript.svg" width="75px" />
+
+          <SkillItem src="./tech-stack/cplusplus.svg" width="75px" />
 
           <SkillItem src="./tech-stack/html-5.svg" width="65px" />
 
