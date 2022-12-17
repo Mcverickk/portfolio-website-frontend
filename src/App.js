@@ -28,6 +28,7 @@ import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
 import Row from "react-bootstrap/Row";
 import Tab from "react-bootstrap/Tab";
+import Alert from "react-bootstrap/Alert";
 
 function App() {
   AOS.init();
@@ -557,48 +558,173 @@ function App() {
     );
   };
 
-  return (
-    <div className="App">
-      <NavHeader />
+  const Desktop = () => {
+    return (
+      <div className="desktop">
+        <NavHeader />
+        <section id="hero" class="d-flex flex-column justify-content-center">
+          <CenterInfo
+            name={NAME}
+            dp="./custom/dp.jpg"
+            instagram={INSTAGRAM}
+            github={GITHUB}
+            twitter={TWITTER}
+            linkedin={LINKEDIN}
+            medium={MEDIUM}
+          />
+        </section>
+        <div className="backgroundColor">
+          <section id="about" class="about">
+            <About />
+          </section>
 
-      <section id="hero" class="d-flex flex-column justify-content-center">
-        <CenterInfo
+          <section id="experience" class="experience">
+            <Experience />
+          </section>
+
+          <section id="projects" class="projects">
+            <Projects />
+          </section>
+
+          <section id="skills" class="skills">
+            <SkillSection />
+          </section>
+        </div>
+        <Footer
           name={NAME}
-          dp="./custom/dp.jpg"
           instagram={INSTAGRAM}
           github={GITHUB}
           twitter={TWITTER}
           linkedin={LINKEDIN}
           medium={MEDIUM}
         />
-      </section>
-
-      <div className="backgroundColor">
-        <section id="about" class="about">
-          <About />
-        </section>
-
-        <section id="experience" class="experience">
-          <Experience />
-        </section>
-
-        <section id="projects" class="projects">
-          <Projects />
-        </section>
-
-        <section id="skills" class="skills">
-          <SkillSection />
-        </section>
       </div>
+    );
+  };
 
-      <Footer
-        name={NAME}
-        instagram={INSTAGRAM}
-        github={GITHUB}
-        twitter={TWITTER}
-        linkedin={LINKEDIN}
-        medium={MEDIUM}
-      />
+  const Mobile = () => {
+    return (
+      <div className="mobile">
+        <section id="heroMobile" class="heroMobile">
+          <div
+            class="centerPiece"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+            data-aos-duration="1000"
+          >
+            <img class="dpimage" src="./custom/dp.jpg" width="150px" />
+
+            <h1 class="name">{NAME}</h1>
+            <div className="typo">
+              <p className="fixedText">I'm a</p>
+              <p className="changingText">
+                <TypeAnimation
+                  // Same String at the start will only be typed once, initially
+                  sequence={[
+                    1200,
+                    "Blockchain Developer",
+                    1000,
+                    " Full-stack Web Developer",
+                    1000,
+                    " Photographer",
+                    1000,
+                    " Traveller",
+                    1000,
+                    " #buidler",
+                  ]}
+                  speed={40} // Custom Speed from 1-99 - Default Speed: 40
+                  style={{ fontSize: "1em" }}
+                  wrapper="span" // Animation will be rendered as a <span>
+                  repeat={Infinity} // Repeat this Animation Sequence infinitely
+                />
+                <span
+                  class="typed"
+                  data-typed-items="Designer, Developer, Freelancer, Photographer"
+                ></span>
+              </p>
+            </div>
+            <div class="social-links">
+              <a href={LINKEDIN} class="linkedin">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href={GITHUB} class="github">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href={TWITTER} class="twitter">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a href={INSTAGRAM} class="instagram">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href={MEDIUM} class="medium">
+                <i class="bi bi-medium"></i>
+              </a>
+            </div>
+            <div class="contactInfo">
+              <div class="contactInfoRow">
+                <i class="bi bi-envelope-at-fill"></i>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=chiragagarwal2001@gmail.com"
+                  target="_blank"
+                  class="contactArea"
+                >
+                  <h6 class="contactDetails">{EMAIL}</h6>
+                </a>
+              </div>
+              <div class="contactInfoRow">
+                <i class="bi bi-telephone-fill"></i>
+                <h6 class="contactDetails">{PHONE}</h6>
+              </div>
+              <div class="contactInfoRow">
+                <i class="bi bi-geo-alt-fill"></i>
+                <h6 class="contactDetails">{LOCATION}</h6>
+              </div>
+            </div>
+
+            <div className="desktopAlert">
+              {["info"].map((variant) => (
+                <Alert
+                  key={variant}
+                  variant={variant}
+                  className="desktopAlertText"
+                >
+                  Please visit the website on a desktop to view my projects,
+                  work experience & skills!
+                </Alert>
+              ))}
+            </div>
+
+            <div>
+              <a href="./custom/ChiragAgarwal_Resume_v2.pdf" download>
+                <button className="downloadResume">
+                  Resume <i class="bi downloadIcon bi-download"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <div className="backgroundColor">
+          <section id="about" class="about">
+            <About />
+          </section>
+        </div>
+        <Footer
+          name={NAME}
+          instagram={INSTAGRAM}
+          github={GITHUB}
+          twitter={TWITTER}
+          linkedin={LINKEDIN}
+          medium={MEDIUM}
+        />
+      </div>
+    );
+  };
+
+  return (
+    <div className="App">
+      <Desktop />
+      <Mobile />
     </div>
   );
 }
