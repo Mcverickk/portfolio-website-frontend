@@ -404,14 +404,14 @@ a:hover {
 
   /* Style the links inside the pill navigation menu */
 
-  /* .nav-pills a {
+  .nav-pills a {
     color: #1d364f;
     text-align: right;
     padding: 15px 20px;
     font-size: 18px;
     font-family: "Jeko", sans-serif;
     font-weight: 500;
-  } */
+  }
 
   /* Change the color of links on mouse-over */
   /* #experience .nav-link:hover {
