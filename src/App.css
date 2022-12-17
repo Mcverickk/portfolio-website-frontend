@@ -721,7 +721,7 @@ a:hover {
     height: 100vh;
     background-size: cover;
 
-    background-image: url(../public/coverMobile.jpg);
+    background-image: url(../public/coverMobile.webp);
     /* padding-bottom: 150px; */
     color: #1d364f;
   }

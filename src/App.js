@@ -179,7 +179,7 @@ function App() {
           <h3 class="bio" data-aos="fade-up" data-aos-duration="500">
             {BIO}
           </h3>
-          <img src="seperator.png" class="line" />
+          <img src="seperator.webp" class="line" />
         </div>
       </div>
     );
@@ -565,7 +565,7 @@ function App() {
         <section id="hero" class="d-flex flex-column justify-content-center">
           <CenterInfo
             name={NAME}
-            dp="./custom/dp.jpg"
+            dp="./custom/dp.webp"
             instagram={INSTAGRAM}
             github={GITHUB}
             twitter={TWITTER}
@@ -612,7 +612,7 @@ function App() {
             data-aos-delay="100"
             data-aos-duration="1000"
           >
-            <img class="dpimage" src="./custom/dp.jpg" width="150px" />
+            <img class="dpimage" src="./custom/dp.webp" width="150px" />
 
             <h1 class="name">{NAME}</h1>
             <div className="typo">
