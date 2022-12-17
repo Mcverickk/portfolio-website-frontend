@@ -22,7 +22,7 @@ const PROJECT1 = {
 
 const PROJECT2 = {
   TYPE: "BLOCKCHAIN",
-  TITLE: "Mr.Gadget",
+  TITLE: "Mr.Gadget NFTs",
   DETAILS:
     "Mr.Gadget is a collection of 241 uniquely generated NFTs on Polygon. IPFS is used to store NFT's metadata & React.js was used to build the frontend.",
   LINK: "https://mrgadget.netlify.app/",
