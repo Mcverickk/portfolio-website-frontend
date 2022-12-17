@@ -404,34 +404,34 @@ a:hover {
 
   /* Style the links inside the pill navigation menu */
 
-  .nav-pills a {
+  /* .nav-pills a {
     color: #1d364f;
     text-align: right;
     padding: 15px 20px;
     font-size: 18px;
     font-family: "Jeko", sans-serif;
     font-weight: 500;
-  }
+  } */
 
   /* Change the color of links on mouse-over */
-  #experience .nav-link:hover {
+  /* #experience .nav-link:hover {
     border-color: #64b9d6;
-  }
+  } */
 
   /* Add a color to the active/current link */
-  #experience .nav-link.active {
+  /* #experience .nav-link.active {
     border-color: #1d364f;
     background-color: transparent;
-  }
+  } */
 
-  #experience .nav-link {
+  /* #experience .nav-link {
     border-right: #ffffff solid;
     border-width: 5px;
     border-radius: 0px;
     border-color: #1d364f1b;
     color: #1d364f;
     background-color: transparent;
-  }
+  } */
 
   /*--------------------------------------------------------------
 # Projects
