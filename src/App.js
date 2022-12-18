@@ -333,7 +333,7 @@ function App() {
             projectTitle={PROJECT7.TITLE}
             projectDetails={PROJECT7.DETAILS}
             projectLink={PROJECT7.LINK}
-            projectIcon={websiteIcon}
+            projectIcon={githubIcon}
             tags={PROJECT7.TAGS}
           />
           <BlockchainCard

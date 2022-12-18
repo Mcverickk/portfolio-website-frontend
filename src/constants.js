@@ -82,8 +82,9 @@ const PROJECT6 = {
 const PROJECT7 = {
   TYPE: "WEB DEVELOPMENT",
   TITLE: "Porfolio Website",
-  DETAILS: "Created this portfolio website using React.js, Bootstrap & CSS.",
-  LINK: "chiragagarwal.xyz",
+  DETAILS:
+    "Created this portfolio website using React.js, Bootstrap & CSS. Also configured it as a template for anyone to use.",
+  LINK: "https://github.com/Mcverickk/portfolio-website-frontend",
   TAGS: ["React.js", "Bootstrap", "Designing", "HTML", "CSS"],
 };
 
