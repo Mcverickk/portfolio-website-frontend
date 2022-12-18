@@ -96,6 +96,15 @@ const PROJECT8 = {
   TAGS: ["React.js", "Solidity", "Next.js", "NFT"],
 };
 
+const PROJECT9 = {
+  TYPE: "THESIS",
+  TITLE: "Integration of IoT & Blockchain",
+  DETAILS:
+    "This undergraduate thesis involved research on how IoT can be integrated with Blockchain using blockchain oracles. We looked at why it is needed and how it can be used to solve the problems of the current centralized IoT system.",
+  LINK: "",
+  TAGS: ["Oracles", "Node.js", "Solidity"],
+};
+
 const WORK = {
   ONE: {
     COMPANY: "Yushu Excellence",
@@ -165,6 +174,7 @@ export {
   PROJECT6,
   PROJECT7,
   PROJECT8,
+  PROJECT9,
   BIO,
   WORK,
   EMAIL,

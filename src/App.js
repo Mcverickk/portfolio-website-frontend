@@ -17,6 +17,7 @@ import {
   PROJECT6,
   PROJECT7,
   PROJECT8,
+  PROJECT9,
   BIO,
   WORK,
   EMAIL,
@@ -341,6 +342,13 @@ function App() {
             projectDetails={PROJECT1.DETAILS}
             projectLink={PROJECT1.LINK}
             tags={PROJECT1.TAGS}
+          />
+          <ArticleCard
+            projectType={PROJECT9.TYPE}
+            projectTitle={PROJECT9.TITLE}
+            projectDetails={PROJECT9.DETAILS}
+            projectLink={PROJECT9.LINK}
+            tags={PROJECT9.TAGS}
           />
           <BlockchainCard
             projectType={PROJECT2.TYPE}

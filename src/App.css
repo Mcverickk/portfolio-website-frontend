@@ -464,7 +464,7 @@ a:hover {
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 20px;
-    color: #52a01b;
+    color: #48760e;
     font-size: 13px;
     font-family: "Jeko", sans-serif;
     font-weight: 500;
@@ -494,9 +494,9 @@ a:hover {
     background-color: #e2f5ff;
     width: 320px;
     height: 330px;
-    border-top: solid;
+    border-top: #48760e solid;
     border-radius: 15px;
-    border-color: #52a01b;
+    border-color: #48760e;
     border-width: 10px;
     margin: 30px;
     box-shadow: 3px 3px 30px #00000030;
