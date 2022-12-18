@@ -8,7 +8,7 @@ const EMAIL = "chiragagarwal2001@gmail.com";
 const PHONE = "+91 8777859648";
 const LOCATION = "India";
 const RESUME_FILENAME = "ChiragAgarwal_Resume_v2.pdf";
-const COLLEGE = "BITS Pilani Goa";
+const COLLEGE = "BITS Pilani Goa '23";
 
 const TYPOGRAPHY = [
   1200,
