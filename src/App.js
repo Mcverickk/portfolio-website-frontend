@@ -25,6 +25,7 @@ import {
   LOCATION,
   TYPOGRAPHY,
   RESUME_FILENAME,
+  COLLEGE,
 } from "./constants";
 import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
@@ -149,6 +150,10 @@ function App() {
             <div class="contactInfoRow">
               <i class="bi bi-telephone-fill"></i>
               <h6 class="contactDetails">{PHONE}</h6>
+            </div>
+            <div class="contactInfoRow">
+              <i class="bi bi-mortarboard-fill"></i>
+              <h6 class="contactDetails">{COLLEGE}</h6>
             </div>
             <div class="contactInfoRow">
               <i class="bi bi-geo-alt-fill"></i>
@@ -757,6 +762,10 @@ function App() {
               <div class="contactInfoRow">
                 <i class="bi bi-telephone-fill"></i>
                 <h6 class="contactDetails">{PHONE}</h6>
+              </div>
+              <div class="contactInfoRow">
+                <i class="bi bi-mortarboard-fill"></i>
+                <h6 class="contactDetails">{COLLEGE}</h6>
               </div>
               <div class="contactInfoRow">
                 <i class="bi bi-geo-alt-fill"></i>
