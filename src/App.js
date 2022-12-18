@@ -343,13 +343,6 @@ function App() {
             projectLink={PROJECT1.LINK}
             tags={PROJECT1.TAGS}
           />
-          <ArticleCard
-            projectType={PROJECT9.TYPE}
-            projectTitle={PROJECT9.TITLE}
-            projectDetails={PROJECT9.DETAILS}
-            projectLink={PROJECT9.LINK}
-            tags={PROJECT9.TAGS}
-          />
           <BlockchainCard
             projectType={PROJECT2.TYPE}
             projectTitle={PROJECT2.TITLE}
@@ -358,6 +351,14 @@ function App() {
             projectIcon={websiteIcon}
             tags={PROJECT2.TAGS}
           />
+          <ArticleCard
+            projectType={PROJECT9.TYPE}
+            projectTitle={PROJECT9.TITLE}
+            projectDetails={PROJECT9.DETAILS}
+            projectLink={PROJECT9.LINK}
+            tags={PROJECT9.TAGS}
+          />
+
           <ArticleCard
             projectType={PROJECT3.TYPE}
             projectTitle={PROJECT3.TITLE}
