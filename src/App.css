@@ -505,7 +505,7 @@ a:hover {
     background-color: #e2f5ff;
     width: 320px;
     height: 330px;
-    border-top: solid;
+    border-top: #0089af solid;
     border-radius: 15px;
     border-color: #0089af;
     border-width: 10px;
@@ -517,7 +517,7 @@ a:hover {
     background-color: #e2f5ff;
     width: 320px;
     height: 330px;
-    border-top: solid;
+    border-top: #b94807 solid;
     border-radius: 15px;
     border-color: #b94807;
     border-width: 10px;
