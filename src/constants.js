@@ -24,7 +24,7 @@ const TYPOGRAPHY = [
 ];
 
 const BIO =
-  "I am a final-year B.E. Electrical & Electronics engineering student at India's tier-1 institute BITS Pilani Goa. I am fascinated by blockchain technology and have been exploring the financial and tech side of it. As a Software Engineer, I have worked on various personal and professional projects. I have worked on projects relating to Web3 payment systems, NFTs, DeFi, zkSNARKs, and oracles. I love mountains & have a passion for travelling, photography, cricket, simulator racing, and graphic designing.";
+  "I am a final-year B.E. Electrical & Electronics engineering student at BITS Pilani Goa. I have a strong interest in blockchain technology and have been exploring its applications in finance and technology. As a software engineer, I have experience working on various personal and professional projects, including those related to Web3 payment systems, NFTs, DeFi, zkSNARKs, and oracles. In addition to my technical pursuits, I also have a passion for mountains, traveling, photography, cricket, simulator racing and graphic design.";
 
 const PROJECT1 = {
   TYPE: "BLOCKCHAIN",
