@@ -333,37 +333,15 @@ function App() {
       <>
         <h2 class="projectsHeader">My Projects</h2>
         <div class="projectCollection">
-          <WebDevCard
-            projectType={PROJECT7.TYPE}
-            projectTitle={PROJECT7.TITLE}
-            projectDetails={PROJECT7.DETAILS}
-            projectLink={PROJECT7.LINK}
-            projectIcon={githubIcon}
-            tags={PROJECT7.TAGS}
-          />
-          <BlockchainCard
-            projectType={PROJECT1.TYPE}
-            projectTitle={PROJECT1.TITLE}
-            projectDetails={PROJECT1.DETAILS}
-            projectLink={PROJECT1.LINK}
-            tags={PROJECT1.TAGS}
-          />
-          <BlockchainCard
-            projectType={PROJECT2.TYPE}
-            projectTitle={PROJECT2.TITLE}
-            projectDetails={PROJECT2.DETAILS}
-            projectLink={PROJECT2.LINK}
-            projectIcon={websiteIcon}
-            tags={PROJECT2.TAGS}
-          />
-          <ArticleCard
+        <BlockchainCard
             projectType={PROJECT9.TYPE}
             projectTitle={PROJECT9.TITLE}
             projectDetails={PROJECT9.DETAILS}
             projectLink={PROJECT9.LINK}
             tags={PROJECT9.TAGS}
+            projectIcon={websiteIcon}
           />
-
+          
           <ArticleCard
             projectType={PROJECT3.TYPE}
             projectTitle={PROJECT3.TITLE}
@@ -372,14 +350,33 @@ function App() {
             projectIcon={mediumIcon}
             tags={PROJECT3.TAGS}
           />
-          <BlockchainCard
-            projectType={PROJECT4.TYPE}
-            projectTitle={PROJECT4.TITLE}
-            projectDetails={PROJECT4.DETAILS}
-            projectLink={PROJECT4.LINK}
+        
+
+          <WebDevCard
+            projectType={PROJECT7.TYPE}
+            projectTitle={PROJECT7.TITLE}
+            projectDetails={PROJECT7.DETAILS}
+            projectLink={PROJECT7.LINK}
             projectIcon={githubIcon}
-            tags={PROJECT4.TAGS}
+            tags={PROJECT7.TAGS}
           />
+
+          <BlockchainCard
+            projectType={PROJECT2.TYPE}
+            projectTitle={PROJECT2.TITLE}
+            projectDetails={PROJECT2.DETAILS}
+            projectLink={PROJECT2.LINK}
+            projectIcon={websiteIcon}
+            tags={PROJECT2.TAGS}
+          />
+          <BlockchainCard
+            projectType={PROJECT1.TYPE}
+            projectTitle={PROJECT1.TITLE}
+            projectDetails={PROJECT1.DETAILS}
+            projectLink={PROJECT1.LINK}
+            tags={PROJECT1.TAGS}
+          />
+          
           <ArticleCard
             projectType={PROJECT5.TYPE}
             projectTitle={PROJECT5.TITLE}
@@ -388,6 +385,7 @@ function App() {
             projectIcon={mediumIcon}
             tags={PROJECT5.TAGS}
           />
+          
           <ArticleCard
             projectType={PROJECT6.TYPE}
             projectTitle={PROJECT6.TITLE}
@@ -395,6 +393,14 @@ function App() {
             projectLink={PROJECT6.LINK}
             projectIcon={mediumIcon}
             tags={PROJECT6.TAGS}
+          />
+          <BlockchainCard
+            projectType={PROJECT4.TYPE}
+            projectTitle={PROJECT4.TITLE}
+            projectDetails={PROJECT4.DETAILS}
+            projectLink={PROJECT4.LINK}
+            projectIcon={githubIcon}
+            tags={PROJECT4.TAGS}
           />
           <BlockchainCard
             projectType={PROJECT8.TYPE}

@@ -99,12 +99,12 @@ const PROJECT8 = {
 };
 
 const PROJECT9 = {
-  TYPE: "THESIS",
-  TITLE: "Integration of IoT & Blockchain",
+  TYPE: "BLOCKCHAIN",
+  TITLE: "Box Protocol",
   DETAILS:
-    "This undergraduate thesis involved research on how IoT can be integrated with Blockchain using blockchain oracles. We looked at why it is needed and how it can be used to solve the problems of the current centralized IoT system.",
-  LINK: "",
-  TAGS: ["Oracles", "Node.js", "Solidity"],
+    "A platform for buying and selling tokenized crypto portfolios. It is an easy, self custodial way to invest in boxes representing the hottest ideas and sectors in Web3!",
+  LINK: "https://boxprotocol.netlify.app/",
+  TAGS: ["DeFi", "Solidity", "React.js"],
 };
 
 const WORK = {
