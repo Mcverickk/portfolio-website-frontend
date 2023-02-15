@@ -121,7 +121,7 @@ const WORK = {
   TWO: {
     COMPANY: "Pay3",
     ROLE: "Blockchain Developer Intern",
-    TIME: "FEB 2022 - AUG 2022",
+    TIME: "FEB 2022 - PRESENT",
     DETAILS: [
       "Researched various crypto exchanges & structured the execution of on-ramp & off-ramp payment systems.",
       "Created and deployed smart contracts for batch payments on Ethereum & Polygon.",
