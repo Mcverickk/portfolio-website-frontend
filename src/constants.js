@@ -103,7 +103,7 @@ const PROJECT9 = {
   TITLE: "Box Protocol",
   DETAILS:
     "A platform for buying and selling tokenized crypto portfolios. It is an easy, self custodial way to invest in boxes representing the hottest ideas and sectors in Web3!",
-  LINK: "https://boxprotocol.netlify.app/",
+  LINK: "https://box-protocol.netlify.app/",
   TAGS: ["DeFi", "Solidity", "React.js"],
 };
 
