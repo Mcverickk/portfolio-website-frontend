@@ -111,8 +111,11 @@ const WORK = {
   ONE: {
     COMPANY: "Yushu Excellence",
     ROLE: "Blockchain Developer Intern",
-    TIME: "SEPT 2022 - OCT 2022",
+    TIME: "AUG 2022 - OCT 2022",
     DETAILS: [
+      "Worked on implementing a UniswapV2 fork on Layer1 called Cube Network.",
+      "Explored & developed smart contracts involving Uniswap's Core & Router contracts.",
+      "Integrated swap and liquidity feature to the frontend of the protocol using React and Ethers.js.",
       "Managed a project to build an ERC20 token launchpad with staking.",
       "Documented the entire end-to-end structure & work of the launchpad project.",
       "Created a detailed explainer on Fractional NFTs.",
@@ -127,16 +130,6 @@ const WORK = {
       "Created and deployed smart contracts for batch payments on Ethereum & Polygon.",
       "Built smart contracts that directly interacted with the Uniswap Router contract to swap tokens and send them to an address.",
       "Worked on building a multi-wallet connect modal library, which the client can import to add multi-wallet connectivity with Metamask, Coinbase, Bitcoin, and WalletConnect to their applications.",
-    ],
-  },
-  THREE: {
-    COMPANY: "Base Protocol",
-    ROLE: "Freelance Blockchain Developer",
-    TIME: "JUL 2022",
-    DETAILS: [
-      "Worked on implementing a UniswapV2 fork on Layer1 called Cube Network.",
-      "Explored & developed smart contracts involving Uniswap's Core & Router contracts.",
-      "Integrated swap and liquidity feature to the frontend of the protocol using React and Ethers.js.",
     ],
   },
   FOUR: {
