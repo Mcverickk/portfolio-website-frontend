@@ -325,7 +325,7 @@ function App() {
       <>
         <h2 class="projectsHeader">My Projects</h2>
         <div class="projectCollection">
-        <BlockchainCard
+        <BoxProtocolCard
             projectType={PROJECT9.TYPE}
             projectTitle={PROJECT9.TITLE}
             projectDetails={PROJECT9.DETAILS}
@@ -434,6 +434,23 @@ function App() {
           </a>
         </div>
         <p class="projectDetails">{props.projectDetails}</p>
+        <BubbleGenerator bubbles={props.tags} />
+      </div>
+    );
+  };
+
+  const BoxProtocolCard = (props) => {
+    return (
+      <div class="blockchainCard">
+        <h5 class="projectBlockchain">{props.projectType}</h5>
+        <div class="projectHeader">
+          <h3 class="projectTitle">{props.projectTitle}</h3>
+          <a href={props.projectLink} target="_blank">
+            {props.projectIcon}
+          </a>
+        </div>
+        <p class="projectDetails">{props.projectDetails}</p>
+        <p class="projectDetails">ETHforAll Hackathon Winner! 🎉</p>
         <BubbleGenerator bubbles={props.tags} />
       </div>
     );
