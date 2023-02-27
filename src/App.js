@@ -201,11 +201,6 @@ function App() {
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item className="companyItemTab2">
-                  <Nav.Link eventKey="tab2" className="companyLinkTab2">
-                    {WORK.THREE.COMPANY}
-                  </Nav.Link>
-                </Nav.Item>
-                <Nav.Item className="companyItemTab2">
                   <Nav.Link eventKey="tab3" className="companyLinkTab2">
                     {WORK.ONE.COMPANY}
                   </Nav.Link>
@@ -226,9 +221,6 @@ function App() {
               <Tab.Content>
                 <Tab.Pane eventKey="tab1">
                   <GetWorkDetails info="tab1" />
-                </Tab.Pane>
-                <Tab.Pane eventKey="tab2">
-                  <GetWorkDetails info="tab2" />
                 </Tab.Pane>
                 <Tab.Pane eventKey="tab3">
                   <GetWorkDetails info="tab3" />

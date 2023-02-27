@@ -127,9 +127,9 @@ const WORK = {
     TIME: "FEB 2022 - PRESENT",
     DETAILS: [
       "Researched various crypto exchanges & structured the execution of on-ramp & off-ramp payment systems.",
-      "Created and deployed smart contracts for batch payments on Ethereum & Polygon.",
+      "Created, tested and deployed smart contracts for batch payments on Ethereum & Polygon.",
       "Built smart contracts that directly interacted with the Uniswap Router contract to swap tokens and send them to an address.",
-      "Worked on building a multi-wallet connect modal library, which the client can import to add multi-wallet connectivity with Metamask, Coinbase, Bitcoin, and WalletConnect to their applications.",
+      "Worked on building a multi-wallet connect SDK, which the client can import to add multi-wallet connectivity with Metamask, Coinbase, WalletConnect & Web3Auth to their applications.",
     ],
   },
   FOUR: {
