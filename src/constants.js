@@ -11,7 +11,7 @@ const RESUME_FILENAME = "ChiragAgarwal_Resume_v2.pdf";
 const COLLEGE = "BITS Pilani Goa '23";
 
 const TYPOGRAPHY = [
-  1200,
+  1201,
   " Blockchain Developer",
   1000,
   " Full-stack Web Developer",
