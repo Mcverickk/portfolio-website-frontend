@@ -111,7 +111,7 @@ const PROJECT10 = {
   TYPE: "BLOCKCHAIN",
   TITLE: "CommuneIN",
   DETAILS:
-    "CommuneIn is an ETHInida 2023 hackathon project. It enables users to verify their citizenship with Aadhar using zk-proofs and register a passkey for further verification. It is an exclusive community platform targeted for Indians into the world of Web3 oppurtunities.",
+    "CommuneIn is an ETHIndia 2023 hackathon project. It enables users to verify their citizenship with Aadhar using zk-proofs and register a passkey for further verification. It is an exclusive community platform targeted for Indians into the world of Web3 oppurtunities.",
   LINK: "https://github.com/chiragpay3/anonaadhar-community-eth-india",
   TAGS: ["ETHIndia2023", "zk-proof", "React.js"],
 };
