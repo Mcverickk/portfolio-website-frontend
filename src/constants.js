@@ -132,7 +132,7 @@ const WORK = {
   },
   TWO: {
     COMPANY: "Pay3",
-    ROLE: "Blockchain Developer Intern",
+    ROLE: "Software Developer(Blockchain)",
     TIME: "FEB 2022 - PRESENT",
     DETAILS: [
       "Researched various crypto exchanges & structured the execution of on-ramp & off-ramp payment systems.",
