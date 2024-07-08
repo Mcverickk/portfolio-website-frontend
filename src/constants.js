@@ -7,7 +7,7 @@ const MEDIUM = "https://medium.com/@Mcverick";
 const EMAIL = "chiragagarwal2001@gmail.com";
 const PHONE = "+91 8777859648";
 const LOCATION = "India";
-const RESUME_FILENAME = "ChiragAgarwal_Resume_v2.pdf";
+const RESUME_FILENAME = "Chirag_Agarwal_Resume.pdf";
 const COLLEGE = "BITS Pilani Goa '23";
 
 const TYPOGRAPHY = [
@@ -122,9 +122,8 @@ const WORK = {
     ROLE: "Blockchain Developer Intern",
     TIME: "AUG 2022 - OCT 2022",
     DETAILS: [
-      "Worked on implementing a UniswapV2 fork on Layer1 called Cube Network.",
-      "Explored & developed smart contracts involving Uniswap's Core & Router contracts.",
-      "Integrated swap and liquidity feature to the frontend of the protocol using React and Ethers.js.",
+      "Implemented a UniswapV2 fork on Cube Network, a new Layer1, developed smart contracts that utilize Uniswap’s Core & Router contracts. Implemented swap and liquidity features on the protocol’s frontend using Ethers.js",
+      "Authored a detailed explainer on fractional NFTs, aimed at enhancing understanding within the team",
     ],
   },
   TWO: {
@@ -132,10 +131,11 @@ const WORK = {
     ROLE: "Software Developer(Blockchain)",
     TIME: "JAN 2023 - PRESENT",
     DETAILS: [
-      "Worked on creating an SDK for onboarding Web2 users to Web3 using social and Web3 login options. Clients can add multi-wallet connectivity with Metamask, Coinbase, Web3Auth, and WalletConnect to their applications.",
-      "Build a checkout flow for NFTs and ERC20/ERC1155 tokens for in-game buying & selling.",
-      "Built smart contracts that directly interacted with the Uniswap Router contract to swap tokens and send them to an address.",
-      "Created, tested and deployed smart contracts for batch payments on Ethereum & Polygon.",
+      "Designed and implemented a user-friendly checkout solution for NFTs (ERC721/ERC1155) and ERC20 tokens, providing a seamless payment experience with options to pay in fiat currency or various ERC20 tokens",
+      "Developed backend microservices using NodeJS for integrating various DEXs and on/off ramp partners",
+      "Created webhooks to capture and store transaction statuses and data across 9+ payment partners",
+      "Developed an SDK tailored for Web2 users, enabling seamless social, email, and phone login options. Integrated Metamask, Coinbase, and WalletConnect to support multi-wallet functionality for Web3 login experiences",
+      "Created and tested smart contracts and scripts for token swapping via Uniswap Router and batch payments",
     ],
   },
   FOUR: {
@@ -143,9 +143,8 @@ const WORK = {
     ROLE: "Web3 Research Analyst",
     TIME: "NOV 2021 - FEB 2022",
     DETAILS: [
-      "Explored the financial side of the Web3 space and gained an understanding of various DeFi protocols.",
-      "Tracked DeFi protocols to understand how we can use them to generate yield.",
-      "Researched on few projects on Polkadot & Kusama.",
+      "Conducted extensive research on DeFi protocols in the Web3 ecosystem, explored projects on Polkadot & Kusama, and deepened insights into investment opportunities in that ecosystem",
+      "Monitored a diverse portfolio of over 20 projects to identify investment opportunities amid market fluctuations",
     ],
   },
   FIVE: {
