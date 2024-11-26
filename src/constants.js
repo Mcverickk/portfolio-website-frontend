@@ -128,14 +128,15 @@ const WORK = {
   },
   TWO: {
     COMPANY: "Pay3",
-    ROLE: "Software Developer(Blockchain)",
+    ROLE: "Founding Software Developer",
     TIME: "JAN 2023 - PRESENT",
     DETAILS: [
-      "Designed and implemented a user-friendly checkout solution for NFTs (ERC721/ERC1155) and ERC20 tokens, providing a seamless payment experience with options to pay in fiat currency or various ERC20 tokens",
-      "Developed backend microservices using NodeJS for integrating various DEXs and on/off ramp partners",
+      "Developed backend microservices for integrating payment partners, DEXs and on/off ramp partners",
       "Created webhooks to capture and store transaction statuses and data across 9+ payment partners",
-      "Developed an SDK tailored for Web2 users, enabling seamless social, email, and phone login options. Integrated Metamask, Coinbase, and WalletConnect to support multi-wallet functionality for Web3 login experiences",
-      "Created and tested smart contracts and scripts for token swapping via Uniswap Router and batch payments",
+      "Developed a backend microservice to perform health checks and monitor the status of payment partner systems",
+      "Designed and implemented a user-friendly checkout solution for NFTs (ERC721/ERC1155) and ERC20 tokens, providing a seamless payment experience with options to pay in fiat currency or various ERC20 tokens",
+      "Developed an SDK for onboarding of Web2 users, supporting social, email, phone, and Web3 login options",
+      "Created and tested smart contracts and scripts for token swapping via Uniswap Router and batch payments"
     ],
   },
   FOUR: {
